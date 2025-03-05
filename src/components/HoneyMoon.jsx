@@ -2,8 +2,9 @@
 import React from 'react';
 import { useState } from "react";
 import Destination1 from "../assets/hard-rock.jpg";
-import Destination2 from "../assets/hard-rock.jpg";
-import Destination3 from "../assets/hard-rock.jpg";
+import Destination2 from "../assets/Honey-Sakrdu.jpeg";
+import Destination3 from "../assets/Byair.jpg";
+import Destination4 from "../assets/roadby.png";
 import info1 from "../assets/car(2).png";
 import info2 from "../assets/hotel.png";
 import info3 from "../assets/dish.png";
@@ -21,13 +22,7 @@ export default function HoneyMoon() {
       cost: "15,500",
       duration: "10 Days 9 Nights",
     },
-    {
-      image: Destination2,
-      title: "Hunza + Sakrdu",
-      subTitle: "10 Days Honeymoon Hunza to Skardu - By Road",
-      cost: "25000",
-      duration: "10 Days 9 Nights",
-    },
+   
     {
       image: Destination3,
       title: "Sakrdu + Hunza",
@@ -36,7 +31,14 @@ export default function HoneyMoon() {
       duration: "9 Days 8 Nights",
     },
     {
-      image: Destination3,
+      image: Destination2,
+      title: "Hunza + Sakrdu",
+      subTitle: "10 Days Honeymoon Hunza to Skardu - By Road",
+      cost: "25000",
+      duration: "10 Days 9 Nights",
+    },
+    {
+      image: Destination4,
       title: "Sakrdu",
       subTitle: "10 Days Honeymoon Package to Skardu - By Road",
       cost: "35000",
@@ -63,7 +65,9 @@ export default function HoneyMoon() {
         {data.map((destination, index) => (
           <SwiperSlide key={index} className="pb-12">
             <div className="p-4 bg-purple-100 rounded-lg shadow-lg transition-transform transform hover:-translate-y-4 hover:shadow-2xl">
-              <img src={destination.image} alt={destination.title} className="w-full rounded-md mb-4" />
+            <div className='w-full h-[300px] overflow-hidden'>
+  <img src={destination.image} alt={destination.title} className="w-full h-full object-cover rounded-md mb-4" />
+</div> 
               <h3 className="text-xl font-semibold">{destination.title}</h3>
               <p className="text-gray-600 mb-4">{destination.subTitle}</p>
               <div className="flex justify-between items-center">
