@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/footer";
 // import scrollreveal from "scrollreveal";
 import { useEffect } from "react";
+import HoneyMoon from "./components/HoneyMoon";
 
 export default function App() {
   // useEffect(() => {
@@ -32,6 +33,7 @@ export default function App() {
       <Hero />
       <Services />
       <Recommend />
+      <HoneyMoon/>
       <Testimonials />
       <Footer />
     </main>

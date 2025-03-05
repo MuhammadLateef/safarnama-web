@@ -65,8 +65,8 @@ export default function Recommend() {
   const [active, setActive] = useState(1);
 
   return (
-    <section className="py-8">
-      <div className="text-center max-w-[90%] max-auto">
+    <section className="py-8 add">
+      <div className="text-center max-w-[90%] max-auto ">
         <h2 className="text-3xl font-bold mb-6">Top Upcoming Pakistan Tours</h2>
       </div>
       {/* <div className="flex justify-center mb-8">
