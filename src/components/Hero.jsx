@@ -2,12 +2,12 @@ import homeImage from "../assets/chota-deosai.webp";
 
 export default function Hero() {
   return (
-    <div id="hero" className="relative mt-8 w-full h-full z-[-1]">
+    <div id="hero" className="relative mt-8 w-full h-full z-[-1] max-w-[90%] mx-auto">
       <div className="h-full">
         <img
           src={homeImage}
           alt="Hero"
-          className="w-full h-[460px] md:h-[600px] lg:h-[700px] rounded-md brightness-60 object-cover"
+          className="w-full h-[460px] md:h-[500px] lg:h-90 rounded-md brightness-60 object-cover"
         />
       </div>
 
@@ -20,7 +20,7 @@ export default function Hero() {
             From mesmerizing natural wonders to vibrant cityscapes, we curate exceptional travel experiences that cater to every explorer. Discover new destinations, immerse yourself in diverse cultures, and create unforgettable memories with us.
           </p>
         </div>
-        <div className="bg-white bg-opacity-80 p-4 rounded-md flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl z-20">
+        <div className="bg-white opacity-90 p-4 rounded-md flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl z-20">
           <div className="flex flex-col w-full md:w-1/4 items-center md:items-start">
             <label className="text-blue-900 text-lg text-center md:text-left">Where you want to go</label>
             <input
@@ -29,23 +29,33 @@ export default function Hero() {
               className="text-center border-none bg-transparent placeholder-black focus:outline-none w-full"
             />
           </div>
-          <div className="flex flex-col w-full md:w-1/4 items-center md:items-start">
-            <label className="text-blue-900 text-lg text-center md:text-left">Check-in</label>
+          <div className=" p-4 rounded-md flex flex-col md:flex-row gap-4 items-center">
+          <div className="flex flex-col items-center md:items-start">
+            <label className="text-blue-900 text-lg">Where you want to go</label>
             <input
-              type="date"
-              className="text-center border-none bg-transparent focus:outline-none w-full"
+              type="text"
+              placeholder="Search Your location"
+              className="text-center border-none bg-transparent placeholder-black focus:outline-none"
             />
           </div>
-          <div className="flex flex-col w-full md:w-1/4 items-center md:items-start">
-            <label className="text-blue-900 text-lg text-center md:text-left">Check-out</label>
+          <div className="flex flex-col items-center md:items-start">
+            <label className="text-blue-900 text-lg">Check-in</label>
             <input
               type="date"
-              className="text-center border-none bg-transparent focus:outline-none w-full"
+              className="text-center border-none bg-transparent focus:outline-none"
             />
           </div>
-          <button className="bg-blue-600 text-white py-2 px-4 rounded-md uppercase text-lg transition duration-300 hover:bg-blue-900 w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-start">
+            <label className="text-blue-900 text-lg">Check-out</label>
+            <input
+              type="date"
+              className="text-center border-none bg-transparent focus:outline-none"
+            />
+          </div>
+          <button className="bg-blue-600 text-white py-2 px-4 rounded-md uppercase text-lg transition duration-300 hover:bg-blue-900">
             Explore Now
           </button>
+        </div>
         </div>
       </div>
     </div>

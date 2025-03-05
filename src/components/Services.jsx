@@ -101,19 +101,19 @@ export default function Services() {
       icon: service1,
       title: "Choose Your Trip",
       subTitle:
-        "Pay through our application and save thousands and get amazing rewards.",
+        "Get the idea from the pre-designed trips from our vast library. We have a tour arranged related to your mood, feelings, number of days.",
     },
     {
       icon: service3,
       title: "Book Your Trip",
       subTitle:
-        " Enjoy the flexible payment through our app and get rewards on every payment.",
+        " After Selecting your desired trip. Book your seats on the website, or feel free to Whatsapp us. Pay 50% upfront using payment method of your choice and that’s it.",
     },
     {
       icon: service2,
       title: "Enjoy Your Trip",
       subTitle:
-        "Find the best hotels and places to visit near you in a single click.",
+        "We take care of everything so you don’t have to worry about anything. Just get yourself immersed in the beauty of nature and enjoy every second of it. Make some Memories!",
     },
   ];
 
