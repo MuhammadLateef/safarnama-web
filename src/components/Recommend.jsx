@@ -2,19 +2,19 @@ import { useState } from "react";
 import Destination1 from "../assets/Kashmir.webp";
 import Destination2 from "../assets/Skardu.jpg";
 import Destination3 from "../assets/Hunza.jpg";
-import Destination4 from "../assets/Destination4.png";
-import Destination5 from "../assets/Destination5.png";
-import Destination6 from "../assets/Destination6.png";
-import info1 from "../assets/car.png";
-import info2 from "../assets/info2.png";
-import info3 from "../assets/info3.png";
+// import Destination4 from "../assets/Destination4.png";
+// import Destination5 from "../assets/Destination5.png";
+// import Destination6 from "../assets/Destination6.png";
+import info1 from "../assets/car(2).png";
+import info2 from "../assets/hotel.png";
+import info3 from "../assets/dish.png";
 
 export default function Recommend() {
   const data = [
     {
       image: Destination1,
       title: "Kashmir",
-      subTitle: "Three Days Trip To Kashmir –    Group Tour",
+      subTitle: "Three Days Trip To Kashmir Valley –    Group Tour",
       cost: "15,500",
       duration: "3 Days Tour",
     },
@@ -65,8 +65,8 @@ export default function Recommend() {
   const [active, setActive] = useState(1);
 
   return (
-    <section className="py-8 add">
-      <div className="text-center max-w-[90%] max-auto ">
+    <section className="py-8  max-w-[90%] mx-auto ">
+      <div className="text-center">
         <h2 className="text-3xl font-bold mb-6">Top Upcoming Pakistan Tours</h2>
       </div>
       {/* <div className="flex justify-center mb-8">
@@ -84,7 +84,7 @@ export default function Recommend() {
           ))}
         </ul>
       </div> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {data.map((destination, index) => (
           <div
             key={index}
@@ -95,9 +95,16 @@ export default function Recommend() {
             <p className="text-gray-600 mb-4">{destination.subTitle}</p>
             <div className="flex justify-between items-center">
               <div className="flex space-x-2">
-                <img src={info1} alt="info" className="w-10 h-10 rounded-full bg-purple-400 p-2" />
-                <img src={info2} alt="info" className="w-10 h-10 rounded-full bg-purple-400 p-2" />
-                <img src={info3} alt="info" className="w-10 h-10 rounded-full bg-purple-400 p-2" />
+                <span className="w-10 h-10 rounded-full bg-purple-400 p-2">
+                  <img src={info1} alt="info" className="w-full h-full invert brightness-200" />
+                </span>
+                <span className="w-10 h-10 rounded-full bg-purple-400 p-2">
+                  <img src={info2} alt="info" className="w-full h-full invert brightness-200" />
+                </span>
+                <span className="w-10 h-10 rounded-full bg-purple-400 p-2">
+                  <img src={info3} alt="info" className="w-full h-full invert brightness-200" />
+                </span>
+                
               </div>
               <h4 className="text-lg font-bold">{destination.cost}</h4>
             </div>

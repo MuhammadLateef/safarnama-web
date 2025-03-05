@@ -4,9 +4,9 @@ import { useState } from "react";
 import Destination1 from "../assets/hard-rock.jpg";
 import Destination2 from "../assets/hard-rock.jpg";
 import Destination3 from "../assets/hard-rock.jpg";
-import info1 from "../assets/car.png";
-import info2 from "../assets/info2.png";
-import info3 from "../assets/info3.png";
+import info1 from "../assets/car(2).png";
+import info2 from "../assets/hotel.png";
+import info3 from "../assets/dish.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -24,21 +24,21 @@ export default function HoneyMoon() {
     {
       image: Destination2,
       title: "Hunza + Sakrdu",
-      subTitle: "10 Days Honeymoon Hunza to Skardu By-Road",
+      subTitle: "10 Days Honeymoon Hunza to Skardu - By Road",
       cost: "25000",
       duration: "10 Days 9 Nights",
     },
     {
       image: Destination3,
       title: "Sakrdu + Hunza",
-      subTitle: "10 Days Honeymoon Package to Skardu By Air",
+      subTitle: "10 Days Honeymoon Package to Skardu - By Air",
       cost: "35000",
       duration: "9 Days 8 Nights",
     },
     {
       image: Destination3,
       title: "Sakrdu",
-      subTitle: "10 Days Honeymoon Package to Skardu By-Road",
+      subTitle: "10 Days Honeymoon Package to Skardu - By Road",
       cost: "35000",
       duration: "10 Days 9 Nights",
     },
@@ -68,9 +68,15 @@ export default function HoneyMoon() {
               <p className="text-gray-600 mb-4">{destination.subTitle}</p>
               <div className="flex justify-between items-center">
                 <div className="flex space-x-2">
-                  <img src={info1} alt="info" className="w-10 h-10 rounded-full bg-purple-400 p-2" />
-                  <img src={info2} alt="info" className="w-10 h-10 rounded-full bg-purple-400 p-2" />
-                  <img src={info3} alt="info" className="w-10 h-10 rounded-full bg-purple-400 p-2" />
+                  <span className="w-10 h-10 rounded-full bg-purple-400 p-2">
+                    <img src={info1} alt="info" className="w-full h-full invert brightness-200" />
+                  </span>
+                  <span className="w-10 h-10 rounded-full bg-purple-400 p-2">
+                    <img src={info2} alt="info" className="w-full h-full invert brightness-200" />
+                  </span>
+                  <span className="w-10 h-10 rounded-full bg-purple-400 p-2">
+                    <img src={info3} alt="info" className="w-full h-full invert brightness-200" />
+                  </span>
                 </div>
               </div>
               <div className="flex justify-between text-gray-600 mt-4">

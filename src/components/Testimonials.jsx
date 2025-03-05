@@ -26,15 +26,15 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="my-20">
+    <section className="my-20  max-w-[90%] mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-semibold">Happy Customers</h2>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 mx-4">
+      <div className="flex flex-col md:flex-row justify-center gap-8">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-blue-100 p-8 rounded-lg shadow-lg transition-transform transform hover:translate-x-1 hover:-translate-y-2 hover:shadow-xl max-w-xs"
+            className="bg-blue-100 p-8 rounded-lg shadow-lg transition-transform transform hover:translate-x-1 hover:-translate-y-2 hover:shadow-xl"
           >
             <p className="text-gray-700 mb-6">{testimonial.feedback}</p>
             <div className="flex flex-col items-center gap-4">
