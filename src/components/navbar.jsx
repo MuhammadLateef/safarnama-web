@@ -55,15 +55,19 @@ export default function Navbar() {
               <Link to="/" className="text-blue-900 font-bold" onClick={() => setNavbarState(false)}>Home</Link>
             </li>
             <li className="w-full py-2">
-              <Link to="/about" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>About</Link>
+              <Link to="/about" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Search Tour</Link>
             </li>
             <li className="w-full py-2">
-              <Link to="/places" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Places</Link>
+              <Link to="/places" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Custom Tour</Link>
             </li>
             <li className="w-full py-2">
-              <Link to="/testimonials" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Testimonials</Link>
+              <Link to="/testimonials" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Hotels</Link>
+            </li>
+            <li className="w-full py-2">
+              <Link to="/testimonials" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Explore Pakistan</Link>
             </li>
           </ul>
+         
         </div>
       )}
     </>
