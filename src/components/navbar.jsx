@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
@@ -11,7 +12,7 @@ export default function Navbar() {
       <nav className="flex justify-between items-center p-4 bg-white shadow-md">
         <div className="flex items-center gap-2 cursor-pointer">
           <img src={logo} alt="Travelo" className="w-10 h-10" />
-          <span className="text-lg font-bold uppercase text-blue-600">Travelo</span>
+          <span className="text-lg font-bold uppercase text-blue-600">Travel</span>
         </div>
         <div className="md:hidden">
           {navbarState ? (
@@ -28,36 +29,39 @@ export default function Navbar() {
         </div>
         <ul className="hidden md:flex gap-4">
           <li>
-            <a href="#home" className="text-blue-900 font-bold">Home</a>
+            <Link to="/" className="text-blue-900 font-bold">Home</Link>
           </li>
           <li>
-            <a href="#services" className="text-blue-600 hover:text-blue-900 transition">About</a>
+            <Link to="/search-tour" className="text-blue-600 hover:text-blue-900 transition">Search Tour</Link>
           </li>
           <li>
-            <a href="#recommend" className="text-blue-600 hover:text-blue-900 transition">Places</a>
+            <Link to="/custom-tour" className="text-blue-600 hover:text-blue-900 transition">Custom Tour</Link>
           </li>
           <li>
-            <a href="#testimonials" className="text-blue-600 hover:text-blue-900 transition">Testimonials</a>
+            <Link to="/hotels" className="text-blue-600 hover:text-blue-900 transition">Hotels</Link>
+          </li>
+          <li>
+            <Link to="/explore-pakistan" className="text-blue-600 hover:text-blue-900 transition">Explore Pakistan</Link>
           </li>
         </ul>
         <button className="hidden md:block bg-blue-400 text-white px-4 py-2 rounded-lg uppercase hover:bg-blue-900 transition">
-          Connect
+          Contact
         </button>
       </nav>
       {navbarState && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
           <ul className="flex flex-col items-start p-4">
             <li className="w-full py-2">
-              <a href="#home" className="text-blue-900 font-bold" onClick={() => setNavbarState(false)}>Home</a>
+              <Link to="/" className="text-blue-900 font-bold" onClick={() => setNavbarState(false)}>Home</Link>
             </li>
             <li className="w-full py-2">
-              <a href="#services" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>About</a>
+              <Link to="/about" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>About</Link>
             </li>
             <li className="w-full py-2">
-              <a href="#recommend" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Places</a>
+              <Link to="/places" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Places</Link>
             </li>
             <li className="w-full py-2">
-              <a href="#testimonials" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Testimonials</a>
+              <Link to="/testimonials" className="text-blue-600 hover:text-blue-900 transition" onClick={() => setNavbarState(false)}>Testimonials</Link>
             </li>
           </ul>
         </div>
