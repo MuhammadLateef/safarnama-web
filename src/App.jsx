@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 // import scrollreveal from "scrollreveal";
 import { useEffect } from "react";
 import HoneyMoon from "./components/HoneyMoon";
+import HoneyMoon2 from "./components/HoneyMoon2";
 
 export default function App() {
   // useEffect(() => {
@@ -34,6 +35,7 @@ export default function App() {
       <Services />
       <Recommend />
       <HoneyMoon/>
+      <HoneyMoon2/>
       <Testimonials />
       <Footer />
     </main>

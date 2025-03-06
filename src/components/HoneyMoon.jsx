@@ -4,7 +4,7 @@ import { useState } from "react";
 import Destination1 from "../assets/hard-rock.jpg";
 import Destination2 from "../assets/Honey-Sakrdu.jpeg";
 import Destination3 from "../assets/Byair.jpg";
-import Destination4 from "../assets/roadby.png";
+import Destination4 from "../assets/Hunzabyair.jpg";
 import info1 from "../assets/car(2).png";
 import info2 from "../assets/hotel.png";
 import info3 from "../assets/dish.png";
@@ -33,23 +33,23 @@ export default function HoneyMoon() {
     {
       image: Destination2,
       title: "Hunza + Sakrdu",
-      subTitle: "10 Days Honeymoon Hunza to Skardu - By Road",
+      subTitle: "10 Days Honeymoon Hunza to Skardu - By Air",
       cost: "25000",
       duration: "10 Days 9 Nights",
     },
     {
       image: Destination4,
-      title: "Sakrdu",
-      subTitle: "10 Days Honeymoon Package to Skardu - By Road",
+      title: "Hunza",
+      subTitle: "4 Days Honeymoon to Hunza - By Air",
       cost: "35000",
-      duration: "10 Days 9 Nights",
+      duration: " 4 Days 5 Nights",
     },
   ];
 
   return (
     <section className="py-8 max-w-[90%] mx-auto">
       <div className="text-center max-w-[90%] mx-auto">
-        <h2 className="text-3xl font-bold mb-6">Honey Moon Tours</h2>
+        <h2 className="text-3xl font-bold mb-6"> BY AIR HONEY MOON TOURS</h2>
       </div>
       <Swiper
         slidesPerView={1}
