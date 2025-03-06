@@ -62,7 +62,7 @@
 //   );
 // }
 
-import homeImage from "../assets/chota-deosai.webp";
+import homeImage from "../assets/Gilgit.jpg";
 
 export default function Hero() {
   return (
