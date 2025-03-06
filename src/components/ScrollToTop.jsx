@@ -1,28 +1,27 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/whatsapplog.png";
 
 export default function ScrollToTop() {
-  const [scrollState, setScrollState] = useState(false);
-
-  const toTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollState(window.pageYOffset > 200);
+      setShowButton(window.pageYOffset > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, []); 
+  const openWhatsApp = () => {
+    window.open("https://wa.me/1234567890?text=Hello!%20I%20need%20some%20information", "_blank");
+  };
 
   return (
     <div
-      className={`fixed bottom-4 right-6 z-10 p-4 rounded-full bg-blue-600 cursor-pointer transition-opacity ${scrollState ? "opacity-100" : "opacity-0"}`}
-      onClick={toTop}
-    >
-      <img src={logo} alt="Scroll to Top" className="h-6" />
-    </div>
+    className={`fixed bottom-4 right-6 z-10 p-4 rounded-full bg-green-500 cursor-pointer transition-opacity ${showButton ? "opacity-100" : "opacity-0"}`}
+    onClick={openWhatsApp}
+  >
+    <img src={logo} alt="WhatsApp" className="h-10 w-10 object-cover" />
+  </div>
   );
 }

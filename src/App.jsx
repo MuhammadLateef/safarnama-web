@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import { useEffect } from "react";
 import HoneyMoon from "./components/HoneyMoon";
 import HoneyMoon2 from "./components/HoneyMoon2";
+import Grouptour from "./components/Grouptour";
 
 export default function App() {
   // useEffect(() => {
@@ -36,7 +37,8 @@ export default function App() {
       <Recommend />
       <HoneyMoon/>
       <HoneyMoon2/>
-      <Testimonials />
+      <Grouptour/>
+      {/* <Testimonials /> */}
       <Footer />
     </main>
   );
