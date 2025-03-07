@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
@@ -10,6 +11,8 @@ import { useEffect } from "react";
 import HoneyMoon from "./components/HoneyMoon";
 import HoneyMoon2 from "./components/HoneyMoon2";
 import Grouptour from "./components/Grouptour";
+import Customtour from "./components/Customtour";
+import Form from "./components/form";
 
 export default function App() {
   // useEffect(() => {
@@ -30,6 +33,7 @@ export default function App() {
 
   return (
     <main className="w-full overflow-hidden">
+       
       <ScrollToTop />
       <Navbar />
       <Hero />
@@ -38,8 +42,12 @@ export default function App() {
       <HoneyMoon/>
       <HoneyMoon2/>
       <Grouptour/>
-      {/* <Testimonials /> */}
+      <Routes>
+        <Route path="/" element={<Customtour />} />
+        <Route path="/form" element={<Form />} />
+      </Routes>
       <Footer />
+  
     </main>
   );
 }

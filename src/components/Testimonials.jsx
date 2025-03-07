@@ -1,4 +1,3 @@
-import avatarImage from "../assets/avatarImage.jpg";
 
 export default function Testimonials() {
   const testimonials = [
