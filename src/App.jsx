@@ -1,50 +1,26 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Recommend from "./components/Recommend";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/footer";
-// import scrollreveal from "scrollreveal";
-import { useEffect } from "react";
-import HoneyMoon from "./components/HoneyMoon";
-import HoneyMoon2 from "./components/HoneyMoon2";
-import Grouptour from "./components/Grouptour";
-import Customtour from "./components/Customtour";
 import Form from "./components/form";
-
+import Home from "./layout/home";
+import About from "./layout/about";
+import Contact from "./layout/contact";
+import CustomTour from "./components/Customtour";
 export default function App() {
-  // useEffect(() => {
-  //   const sr = scrollreveal({
-  //     origin: "top",
-  //     distance: "80px",
-  //     duration: 2000,
-  //     reset: true,
-  //   });
-  //   sr.reveal(
-  //     `nav, #hero, #services, #recommend, #testimonials, footer`,
-  //     {
-  //       opacity: 0.8,
-  //       interval: 300,
-  //     }
-  //   );
-  // }, []);
+
 
   return (
     <main className="w-full overflow-hidden">
        
       <ScrollToTop />
       <Navbar />
-      <Hero />
-      <Services />
-      <Recommend />
-      <HoneyMoon/>
-      <HoneyMoon2/>
-      <Grouptour/>
       <Routes>
-        <Route path="/" element={<Customtour />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/custom-tour" element={<CustomTour />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
   

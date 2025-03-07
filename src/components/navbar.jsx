@@ -45,9 +45,9 @@ export default function Navbar() {
               <Link to="/explore-pakistan" className="text-blue-600 hover:text-blue-900 transition">Explore Pakistan</Link>
             </li>
           </ul>
-          <button className="hidden md:block bg-blue-400 text-white px-4 py-2 rounded-lg uppercase hover:bg-blue-900 transition">
+          <Link to="/contact" className="hidden md:block bg-blue-400 text-white px-4 py-2 rounded-lg uppercase hover:bg-blue-900 transition">
             Contact
-          </button>
+          </Link>
         </div>
       </nav>
       {navbarState && (
