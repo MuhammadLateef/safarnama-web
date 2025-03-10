@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation , Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 import { motion } from "framer-motion";
 
 // Import hero image
@@ -32,13 +34,13 @@ const hotels = [
 
 const HotelsPage = () => {
   return (
-    <div className="w-full min-h-screen max-w-[90%] mx-auto">
+    <div className="w-full max-w-[90%] mx-auto">
       {/* Hero Section */}
-      <div className="relative w-full h-[50vh] sm:h-[60vh] max-w-[90%] mx-auto mt-8 bg-black">
+      <div className="relative w-full h-[60vh] sm:h-[60vh] mt-8 bg-black rounded-lg overflow-hidden">
         <img
           src={HeroImage}
           alt="Hotels"
-          className="w-full h-full object-cover rounded-md opacity-70"
+          className="w-full h-full object-cover opacity-70"
         />
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
@@ -58,12 +60,14 @@ const HotelsPage = () => {
         <Swiper
           spaceBetween={20}
           slidesPerView={3}
+          autoplay={{ delay: 3000 }}
+          loop={true}
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          navigation={true}
-          modules={[Navigation]}
+          pagination={{ clickable: true }}
+          modules={[Pagination , Autoplay]}
           className="relative"
         >
           {hotels.map((hotel, index) => (
