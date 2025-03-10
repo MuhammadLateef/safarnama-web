@@ -68,10 +68,10 @@ const HotelsPage = () => {
           }}
           pagination={{ clickable: true }}
           modules={[Pagination , Autoplay]}
-          className="relative"
+          className="relative "
         >
           {hotels.map((hotel, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="py-12">
               <div className="relative w-full h-40 sm:h-48 overflow-hidden">
                 <img
                   src={hotel.image}
