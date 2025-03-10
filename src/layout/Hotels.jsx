@@ -9,7 +9,7 @@ import HeroImage from "../assets/Hotel.jpg";
 
 // Import icons for the slider
 import icon1 from "../assets/Hunzaicon.png";
-import icon2 from "../assets/Skarduicon.png";
+import icon2 from "../assets/skarduicon.png";
 import icon3 from "../assets/Swaticon.png";
 import icon4 from "../assets/Gilgiticon.jpg";
 import icon5 from "../assets/Naranicon.png";
