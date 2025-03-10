@@ -1,27 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation , Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
-
-// Import hero image
 import HeroImage from "../assets/Hotel.jpg";
-
-// Import icons for the slider
 import icon1 from "../assets/Hunzaicon.png";
 import icon2 from "../assets/skarduicon.png";
 import icon3 from "../assets/Swaticon.png";
 import icon4 from "../assets/Gilgiticon.jpg";
 import icon5 from "../assets/Naranicon.png";
-
-// Import unique images for the card section
+import { useNavigate } from "react-router-dom";
 import cardImage1 from "../assets/Islamabad.jpg";
-// import cardImage2 from "../assets/SkarduHotel.jpg";
-// import cardImage3 from "../assets/SwatHotel.jpg";
-// import cardImage4 from "../assets/GilgitHotel.jpg";
-// import cardImage5 from "../assets/NaranHotel.jpg";
 
 const hotels = [
   { name: "Hunza", image: icon1, cardImage: cardImage1 },
@@ -33,6 +23,7 @@ const hotels = [
 ];
 
 const HotelsPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full max-w-[90%] mx-auto">
       {/* Hero Section */}
@@ -67,7 +58,7 @@ const HotelsPage = () => {
             1024: { slidesPerView: 3 },
           }}
           pagination={{ clickable: true }}
-          modules={[Pagination , Autoplay]}
+          modules={[Pagination, Autoplay]}
           className="relative "
         >
           {hotels.map((hotel, index) => (
@@ -88,7 +79,7 @@ const HotelsPage = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="py-10 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* <div className="py-10 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {hotels.map((hotel, index) => (
           <div
             key={index}
@@ -101,6 +92,28 @@ const HotelsPage = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
               <button className="bg-white text-black px-3 py-2 sm:px-4 sm:py-2 rounded-md font-bold hover:bg-gray-300">
+                Find Hotels
+              </button>
+            </div>
+          </div>
+        ))}
+      </div> */}
+      <div className="py-10 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {hotels.map((hotel, index) => (
+          <div
+            key={index}
+            className="relative w-full h-48 sm:h-56 rounded-xl overflow-hidden shadow-lg"
+          >
+            <img
+              src={hotel.cardImage}
+              alt={hotel.name}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+              <button
+                className="bg-white text-black px-3 py-2 sm:px-4 sm:py-2 rounded-md font-bold hover:bg-gray-300"
+                onClick={() => navigate(`/hotels/${hotel.name.toLowerCase()}`)}
+              >
                 Find Hotels
               </button>
             </div>
