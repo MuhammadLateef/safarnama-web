@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import About from "./layout/About";
+// import About from "./layout/About";
 import Contact from "./layout/Contact";
 import HotelsPage from "./layout/Hotels";
 import HotelDetailPage from "./layout/HotelDetailPage";
@@ -11,7 +11,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      {/* <Route path="/about" element={<About />} /> */}
       <Route path="/contact" element={<Contact />} />
       <Route path="/custom-tour" element={<CustomTour />} />
       <Route path="/form" element={<Form />} />
