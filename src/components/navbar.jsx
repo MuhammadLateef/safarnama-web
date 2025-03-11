@@ -125,7 +125,7 @@ export default function Navbar() {
               {/* <button className="text-blue-600 hover:text-blue-900 transition">Hotels</button> */}
               <Link to="/hotels" className="text-blue-600 hover:text-blue-900 transition">Hotels</Link>
               {hotelMenuOpen && (
-                <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md py-2 z-[200]">
+                <ul className="absolute left-0  w-40 bg-white shadow-lg rounded-md py-2 z-[200]">
                   <li>
                     <Link to="/hotels/skardu" className="block px-4 py-2 hover:bg-gray-100 text-blue-600">Skardu</Link>
                   </li>
