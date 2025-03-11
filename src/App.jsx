@@ -3,7 +3,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Form from "./components/form";
-// import Home from "./layout/home";
+import Home from "./layout/home";
 // import About from "./layout/about";
 // import Contact from "./layout/contact";
 import Hotels from "./layout/Hotels";
