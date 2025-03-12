@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-// import About from "./layout/About";
-// import Contact from "./layout/Contact";
+import About from "./layout/about";
+import Explore from "./layout/ExplorePakistan";
 import HotelsPage from "./layout/Hotels";
 import HotelDetailPage from "./layout/HotelDetailPage";
 import CustomTour from "./components/Customtour";
@@ -11,8 +11,8 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/contact" element={<Contact />} /> */}
+      <Route path="/about" element={<About />} />
+      <Route path="/explore-pakistan" element={<Explore/>} />
       <Route path="/custom-tour" element={<CustomTour />} />
       <Route path="/form" element={<Form />} />
       <Route path="/hotels" element={<HotelsPage />} />

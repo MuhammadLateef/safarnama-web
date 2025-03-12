@@ -64,7 +64,7 @@ const Grouptour = () => { const data = [
                   >
                     {data.map((destination, index) => (
                       <SwiperSlide key={index} className="pb-12">
-                        <div className="p-4 bg-purple-100 rounded-lg shadow-lg transition-transform transform hover:-translate-y-4 hover:shadow-2xl">
+                        <div className="p-4 bg-blue-50 rounded-lg shadow-lg transition-transform transform hover:-translate-y-4 hover:shadow-2xl">
                         <div className='w-full h-[300px] overflow-hidden'>
               <img src={destination.image} alt={destination.title} className="w-full h-full object-cover rounded-md mb-4" />
             </div> 
