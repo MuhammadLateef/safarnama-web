@@ -217,7 +217,7 @@ const HotelDetailPage = () => {
       </div>
 
       {/* Hotel List */}
-      <div className="w-full max-w-[90%] mx-auto py-10">
+      {/* <div className="w-full max-w-[90%] mx-auto py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {cityHotels.hotels.map((hotel, index) => (
             <div key={index} className="border p-4 rounded-xl bg-purple-100 shadow-lg transition-transform transform hover:scale-105">
@@ -229,7 +229,62 @@ const HotelDetailPage = () => {
                   Book Now
                 </button>
               </div>
-            </div> 
+            </div>  */}
+<div className="w-full max-w-[90%] mx-auto py-10">
+  {/* Grid Layout for 2 Cards Per Row */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {cityHotels.hotels.map((hotel, index) => (
+      <div
+        key={index}
+        className="flex flex-row items-center bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-200 rounded-lg shadow-xl p-6 hover:shadow-2xl transition-all duration-300"
+      >
+        {/* Image on the Left */}
+        <img
+          src={hotel.cardImage}
+          alt={hotel.title}
+          className="w-48 h-48 object-cover rounded-lg shadow-md"
+        />
+
+        {/* Content on the Right */}
+        <div className="flex flex-col flex-1 px-6">
+          {/* Hotel Title */}
+          <h1 className="text-xl font-semibold text-gray-800 tracking-wide">
+            {hotel.title}
+          </h1>
+
+          {/* Star Ratings */}
+          <div className="flex items-center mt-2">
+            {[...Array(5)].map((_, i) => (
+              <svg
+                key={i}
+                className={`w-5 h-5 ${i < 4 ? "text-yellow-400" : "text-gray-300"}`}
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 0l2.936 5.955 6.574.955-4.755 4.635 1.123 6.545z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2 text-sm">4 Reviews</span>
+          </div>
+
+          {/* Description */}
+          <p className="text-sm mt-2 text-gray-600 leading-relaxed">
+            {hotel.description}
+          </p>
+
+          {/* Price */}
+          <div className="mt-4">
+            <span className="text-2xl font-bold text-gray-900">$58.00</span>
+          </div>
+
+          {/* Book Now Button */}
+          <div className="flex justify-start mt-4">
+            <button className="bg-indigo-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-indigo-700 hover:scale-105 transition-transform duration-300">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
           ))}
         </div>
       </div>

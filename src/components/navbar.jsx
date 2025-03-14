@@ -147,8 +147,8 @@ export default function Navbar() {
             <li>
               <Link
                 to="/about"
-                className={isActive(location.pathname === "/")}
-              >
+                className={isActive(location.pathname === "/")}>
+              
                 About
               </Link>
             </li>
