@@ -106,7 +106,7 @@ export default function Hero() {
             It's Time to{" "}
             <motion.span
               key={index}
-              className="text-yellow-400"
+              className="text-[#FAB12F]"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
