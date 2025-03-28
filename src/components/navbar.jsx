@@ -93,7 +93,7 @@ import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
-import logo from "../assets/logo.png";
+import logo from "../assets/IMG.png";
 
 export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
@@ -120,7 +120,7 @@ export default function Navbar() {
       <nav className="bg-blue-50 shadow-md z-[50] relative">
         <div className="max-w-[90%] mx-auto flex justify-between items-center py-4 relative">
           <div className="flex items-center gap-2 cursor-pointer">
-            <img src={logo} alt="Travelo" className="w-[140px] h-[110px]" />
+            <img src={logo} alt="Travelo" className="w-[100px] h-30 object-contain" />
             <span className="text-lg font-bold uppercase text-blue-600">
               
             </span>
