@@ -32,7 +32,7 @@ export default function Footer() {
     //     </li>
     //   </ul>
     // </footer>
-    <div className="bg-blue-100">
+    <div className="bg-purple-100">
       <footer className="mx-auto max-w-[90%]">
         <div className="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
           <div className="col-span-full lg:col-span-2">

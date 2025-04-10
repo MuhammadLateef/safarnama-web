@@ -114,7 +114,7 @@ export default function Hero() {
             >
               {words[index]}
             </motion.span>{" "}
-            Pakistan
+            Gilgit Baltistan
           </h1>
           <p className="my-7 text-sm md:text-md lg:text-lg px-4 md:px-20 lg:px-48">
             From mesmerizing natural wonders to vibrant cityscapes, we curate exceptional travel experiences that cater to every explorer.

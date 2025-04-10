@@ -144,14 +144,7 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                to="/about"
-                className={isActive(location.pathname === "/")}>
-              
-                About
-              </Link>
-            </li>
+           
             <li>
               <Link
                 to="/custom-tour"
@@ -228,7 +221,23 @@ export default function Navbar() {
                 to="/explore-pakistan"
                 className={isActive(location.pathname === "/explore-pakistan")}
               >
-                Explore Pakistan
+                Explore Gilgit Baltistan
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/transport"
+                className={isActive(location.pathname === "/transport")}>
+              
+                Transport
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className={isActive(location.pathname === "/about")}>
+              
+                About
               </Link>
             </li>
           </ul>
@@ -336,7 +345,7 @@ export default function Navbar() {
                 className={isActive(location.pathname === "/explore-pakistan")}
                 onClick={() => setNavbarState(false)}
               >
-                Explore Pakistan
+                Explore Explore Gilgit Baltistan
               </Link>
             </li>
           </ul>
