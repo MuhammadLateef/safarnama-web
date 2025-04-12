@@ -234,6 +234,14 @@ export default function Navbar() {
             </li>
             <li>
               <Link
+                to="/photography"
+                className={isActive(location.pathname === "/photography")}>
+              
+                Photography Service
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/about"
                 className={isActive(location.pathname === "/about")}>
               
@@ -263,15 +271,7 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="w-full py-2">
-              <Link
-                to="/about"
-                className={isActive(location.pathname === "/")}
-                onClick={() => setNavbarState(false)}
-              >
-                About
-              </Link>
-            </li>
+        
             <li className="w-full py-2">
               <Link
                 to="/custom-tour"
@@ -346,6 +346,41 @@ export default function Navbar() {
                 onClick={() => setNavbarState(false)}
               >
                 Explore Explore Gilgit Baltistan
+              </Link>
+            </li>
+             <li className="w-full py-2">
+              <Link
+                to="/about"
+                className={isActive(location.pathname === "/")}
+                onClick={() => setNavbarState(false)}
+              >
+                About
+              </Link>
+            </li> <li className="w-full py-2">
+              <Link
+                to="/about"
+                className={isActive(location.pathname === "/")}
+                onClick={() => setNavbarState(false)}
+              >
+                Photography Service
+              </Link>
+            </li>
+             <li className="w-full py-2">
+              <Link
+                to="/transport"
+                className={isActive(location.pathname === "/")}
+                onClick={() => setNavbarState(false)}
+              >
+                Transport
+              </Link>
+            </li>
+             <li className="w-full py-2">
+              <Link
+                to="/about"
+                className={isActive(location.pathname === "/")}
+                onClick={() => setNavbarState(false)}
+              >
+                About
               </Link>
             </li>
           </ul>

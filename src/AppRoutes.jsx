@@ -6,6 +6,7 @@ import HotelDetailPage from "./layout/HotelDetailPage";
 import CustomTour from "./components/Customtour";
 import Home from "./layout/home";
 import Form from "./components/form";
+import Photography from "./layout/Photography";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
       <Route path="/form" element={<Form />} />
       <Route path="/hotels" element={<HotelsPage />} />
       <Route path="/hotels/:name" element={<HotelDetailPage />} />
+      <Route path="/photography" element={<Photography/>} />
     </Routes>
   );
 };
