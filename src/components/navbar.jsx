@@ -348,17 +348,9 @@ export default function Navbar() {
                 Explore Explore Gilgit Baltistan
               </Link>
             </li>
-             <li className="w-full py-2">
+              <li className="w-full py-2">
               <Link
-                to="/about"
-                className={isActive(location.pathname === "/")}
-                onClick={() => setNavbarState(false)}
-              >
-                About
-              </Link>
-            </li> <li className="w-full py-2">
-              <Link
-                to="/about"
+                to="/photography"
                 className={isActive(location.pathname === "/")}
                 onClick={() => setNavbarState(false)}
               >
