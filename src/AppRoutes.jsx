@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import About from "./layout/about";
 import Explore from "./layout/ExplorePakistan";
+import ExploreDetailPage from "./layout/ExploreDetailPage";
 import HotelsPage from "./layout/Hotels";
 import HotelDetailPage from "./layout/HotelDetailPage";
 import CustomTour from "./components/Customtour";
@@ -15,6 +16,9 @@ const AppRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/explore-pakistan" element={<Explore/>} />
+      
+      <Route path="/destination/:name" element={<ExploreDetailPage />} />
+
       <Route path="/custom-tour" element={<CustomTour />} />
       <Route path="/form" element={<Form />} />
       <Route path="/hotels" element={<HotelsPage />} />

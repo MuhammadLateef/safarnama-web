@@ -160,17 +160,17 @@ const HotelsPage = () => {
           alt="Hotels"
           className="w-full h-full object-cover opacity-70"
         />
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="absolute inset-0 flex justify-center items-center text-white text-3xl sm:text-5xl font-bold text-center px-4"
         >
           Discover Amazing Hotels
-        </motion.h1>
+        </motion.h1> */}
       </div>
 
-      {/* Slider Section */}
+      {/* Slider Section
       <div className="py-10 px-5">
         <h2 className="text-2xl sm:text-3xl font-bold mb-5 text-center">
           Hotels Available In
@@ -203,7 +203,7 @@ const HotelsPage = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
 
       {/* Cards Section */}
       <div className="py-10 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
