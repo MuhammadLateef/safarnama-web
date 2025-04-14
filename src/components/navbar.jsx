@@ -226,8 +226,8 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                to="/transport"
-                className={isActive(location.pathname === "/transport")}>
+                to="/transportation"
+                className={isActive(location.pathname === "/transportation")}>
               
                 Transport
               </Link>
@@ -359,7 +359,7 @@ export default function Navbar() {
             </li>
              <li className="w-full py-2">
               <Link
-                to="/transport"
+                to="/transportation"
                 className={isActive(location.pathname === "/")}
                 onClick={() => setNavbarState(false)}
               >

@@ -7,6 +7,7 @@ import CustomTour from "./components/Customtour";
 import Home from "./layout/home";
 import Form from "./components/form";
 import Photography from "./layout/Photography";
+import Transportation from "./layout/Transportation";
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,8 @@ const AppRoutes = () => {
       <Route path="/hotels" element={<HotelsPage />} />
       <Route path="/hotels/:name" element={<HotelDetailPage />} />
       <Route path="/photography" element={<Photography/>} />
+      <Route path="/transportation" element={<Transportation/>} />
+      
     </Routes>
   );
 };
