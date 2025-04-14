@@ -99,21 +99,21 @@ export default function Services() {
   const data = [
     {
       icon: service1,
-      title: "Choose Your Trip",
+      title: "Transport",
       subTitle:
-        "Get the idea from the pre-designed trips from our vast library. We have a tour arranged related to your mood, feelings, number of days.",
+      "Travel comfortably and safely with our reliable transport services. Whether it's a solo trip or group travel, we've got the perfect ride for every journey.",
     },
     {
       icon: service3,
-      title: "Book Your Trip",
+      title: "Hotel",
       subTitle:
-        " After Selecting your desired trip. Book your seats on the website, or feel free to Whatsapp us. Pay 50% upfront using payment method of your choice and that’s it.",
+      "Relax and unwind in top-rated hotels handpicked for your comfort. From cozy rooms to luxury stays, we ensure you feel at home wherever you go.",
     },
     {
       icon: service2,
-      title: "Enjoy Your Trip",
+      title: "Photography",
       subTitle:
-        "We take care of everything so you don’t have to worry about anything. Just get yourself immersed in the beauty of nature and enjoy every second of it. Make some Memories!",
+      "Capture every special moment with our professional photography service. Let us turn your adventures into timeless memories with stunning visuals.",
     },
   ];
 

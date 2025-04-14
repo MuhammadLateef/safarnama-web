@@ -49,7 +49,7 @@ const Grouptour = () => { const data = [
     <div>
        <section className="py-8 max-w-[90%] mx-auto">
                   <div className="text-center max-w-[90%] mx-auto">
-                    <h2 className="text-3xl font-bold mb-6"> Group Tours</h2>
+                    <h2 className="text-3xl font-bold mb-6"> By AIR COPERATE TOURS</h2>
                   </div>
                   <Swiper
                     slidesPerView={1}

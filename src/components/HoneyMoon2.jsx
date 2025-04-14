@@ -16,7 +16,7 @@ const HoneyMoon2 = () => {
         {
           image: Destination1,
           title: "Hunza + Sakrdu",
-          subTitle: "10 Days Honeymoon To Skardu and Hunza – By Road",
+          subTitle: "10 Days To Skardu and Hunza – By Road",
           cost: "15,500",
           duration: "10 Days 9 Nights",
         },
@@ -25,14 +25,14 @@ const HoneyMoon2 = () => {
         {
           image: Destination2,
           title: "Sakrdu",
-          subTitle: "10 Days Honeymoon Tour Package to Skardu By Road",
+          subTitle: "10 Days Package to Skardu By Road",
           cost: "25000",
           duration: "10 Days 9 Nights",
         },
         {
           image: Destination4,
           title: "Naran+Shogran",
-          subTitle: "4 Days Honeymoon Package to Naran and Shogran By Road",
+          subTitle: "4 Days package to Naran and Shogran By Road",
           cost: "35000",
           duration: " 4 Days 5 Nights",
         },
@@ -42,7 +42,7 @@ const HoneyMoon2 = () => {
     <div>
        <section className="py-8 max-w-[90%] mx-auto">
             <div className="text-center max-w-[90%] mx-auto">
-              <h2 className="text-3xl font-bold mb-6"> BY ROAD HONEY MOON TOURS</h2>
+              <h2 className="text-3xl font-bold mb-6"> FAMILY  TOURS</h2>
             </div>
             <Swiper
               slidesPerView={1}
