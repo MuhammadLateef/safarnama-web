@@ -8,7 +8,7 @@ import CustomTour from "./components/Customtour";
 import Home from "./layout/home";
 import Form from "./components/form";
 import Photography from "./layout/Photography";
-import Transportation from "./layout/Transportation";
+import Transportation from "./layout/Transport";
 
 const AppRoutes = () => {
   return (
