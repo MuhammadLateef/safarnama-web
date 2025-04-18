@@ -93,7 +93,7 @@ import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
-import logo from "../assets/IMG.png";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);

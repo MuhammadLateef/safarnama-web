@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook
+import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/Gilgit.jpg"; // Add your hero image
 import skardu from "../assets/chota-deosai.webp";
 
@@ -15,7 +15,7 @@ const destinations = [
 ];
 
 export default function ExplorePage() {
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   return (
     <div className="w-full max-w-[90%] mx-auto">
@@ -70,7 +70,7 @@ export default function ExplorePage() {
             {/* Click to navigate to detailed page */}
             <div
               className="absolute inset-0 cursor-pointer"
-              onClick={() => navigate(`/destinations/${destination.slug}`)} // Navigate to destination detail page
+              onClick={() => navigate(`/destination/${destination.slug}`)} // Navigate to destination detail page
             ></div>
           </div>
         ))}
