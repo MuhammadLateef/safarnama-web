@@ -4,7 +4,7 @@ import HoneyMoon from "../components/HoneyMoon";
 import HoneyMoon2 from "../components/HoneyMoon2";
 import Recommend from "../components/Recommend";
 import Services from "../components/Services";
-import Customtour from "../components/Customtour"
+// import Customtour from "../components/Customtour"
 import Testimonials from "../components/Testimonials";
 const home = () => {
   return (
@@ -16,7 +16,7 @@ const home = () => {
       <HoneyMoon />
       <HoneyMoon2 />
       <Grouptour />
-      <Customtour />
+      {/* <Customtour /> */}
       <Testimonials/>
     </>
   );

@@ -4,7 +4,7 @@ import Explore from "./layout/ExplorePakistan";
 import ExploreDetailPage from "./layout/ExploreDetailPage";
 import HotelsPage from "./layout/Hotels";
 import HotelDetailPage from "./layout/HotelDetailPage";
-import CustomTour from "./components/Customtour";
+import CustomTour from "./layout/Customtour";
 import Home from "./layout/home";
 import Form from "./components/form";
 import Photography from "./layout/Photography";

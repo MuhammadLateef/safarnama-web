@@ -1,8 +1,8 @@
 import React from 'react';
-import transportHero from "../assets/road.jpg";
+import transportHero from "../assets/transport-hero-img.jpg";
 import carIcon from "../assets/Motorcar.jpg";
-import vanIcon from "../assets/van.jpg";
-import busIcon from "../assets/bus.jpg";
+import vanIcon from "../assets/Suvcar.jpg";
+import busIcon from "../assets/toyota car.jpg";
 
 const Transportation = () => {
   return (
@@ -52,7 +52,7 @@ const Transportation = () => {
             </div>
           </div>
 
-          {/* Van Card */}
+          {/* Suv Card */}
           <div className="bg-white shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
             <img
               src={vanIcon}
@@ -61,18 +61,17 @@ const Transportation = () => {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Family Van
+                SUV Car
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                Spacious vans perfect for families or medium-sized groups traveling together.
-              </p>
+              Comfortable and versatile SUVs ideal for exploring rugged terrains or enjoying city rides with extra space and style.              </p>
               <button className="bg-blue-400 hover:bg-green-600 text-white px-5 py-2 rounded-lg text-sm font-medium">
                 Book Now
               </button>
             </div>
           </div>
 
-          {/* Bus Card */}
+          {/* toyota Card */}
           <div className="bg-white shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
             <img
               src={busIcon}
@@ -81,11 +80,12 @@ const Transportation = () => {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                Tour Bus
+                Toyota Car
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                Comfortable and economical option for large group tours and excursions.
-              </p>
+              Reliable and fuel-efficient Toyota vehicles, perfect for smooth city drives and comfortable long-distance travel.
+
+</p>
               <button className="bg-blue-400 hover:bg-green-600 text-white px-5 py-2 rounded-lg text-sm font-medium">
                 Book Now
               </button>
