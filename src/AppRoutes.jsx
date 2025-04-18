@@ -9,7 +9,7 @@ import Home from "./layout/home";
 import Form from "./components/form";
 import Photography from "./layout/Photography";
 import Transportation from "./layout/Transport";
-import ContactForm from "./layout/ContactForm";
+import ContactForm from "./layout/Contactform";
 const AppRoutes = () => {
 
   return (
