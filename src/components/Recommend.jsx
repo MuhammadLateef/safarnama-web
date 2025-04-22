@@ -13,8 +13,8 @@ export default function Recommend() {
   const data = [
     {
       image: Destination1,
-      title: "Kashmir",
-      subTitle: "Three Days Trip To Kashmir Valley –    Group Tour",
+      title: "Skardu + Gilgit",
+      subTitle: "Three Days Trip To Gilgit Baltistan –    Group Tour",
       cost: "15,500",
       duration: "3 Days Tour",
     },
@@ -27,8 +27,8 @@ export default function Recommend() {
     },
     {
       image: Destination3,
-      title: "Sakrdu + Hunza",
-      subTitle: "Eight Days Trip To Skardu and Hunza – Group Tour",
+      title: "Hunza + Nagar",
+      subTitle: "Eight Days Trip To Hunza and Nagar – Group Tour",
       cost: "35000",
       duration: "8 Days Tour",
     },

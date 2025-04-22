@@ -105,8 +105,8 @@ export default function Navbar() {
     "/hotels",
     "/hotels/skardu",
     "/hotels/hunza",
-    "/hotels/naran",
-    "/hotels/swat",
+    "/hotels/astore",
+    "/hotels/ghizer",
     "/hotels/gilgit",
   ].includes(location.pathname);
 
@@ -185,22 +185,22 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      to="/hotels/naran"
+                      to="/hotels/astore"
                       className={`${isActive(
-                        location.pathname === "/hotels/naran"
+                        location.pathname === "/hotels/astore"
                       )} block px-4 py-2 hover:bg-gray-100 text-blue-600`}
                     >
-                      Naran
+                      Astore
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/hotels/swat"
+                      to="/hotels/ghizer"
                       className={`${isActive(
-                        location.pathname === "/hotels/swat"
+                        location.pathname === "/hotels/ghizer"
                       )} block px-4 py-2 hover:bg-gray-100 text-blue-600`}
                     >
-                      Swat
+                      Ghizer
                     </Link>
                   </li>
                   <li>
@@ -311,20 +311,20 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      to="/hotels/naran"
-                      className={isActive(location.pathname === "/hotels/naran")}
+                      to="/hotels/astore"
+                      className={isActive(location.pathname === "/hotels/astore")}
                       onClick={() => setNavbarState(false)}
                     >
-                      Naran
+                      Astore
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/hotels/swat"
-                      className={isActive(location.pathname === "/hotels/swat")}
+                      to="/hotels/ghizer"
+                      className={isActive(location.pathname === "/hotels/ghizer")}
                       onClick={() => setNavbarState(false)}
                     >
-                      Swat
+                      Ghizer
                     </Link>
                   </li>
                   <li>

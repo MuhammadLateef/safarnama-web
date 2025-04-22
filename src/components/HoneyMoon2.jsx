@@ -15,7 +15,7 @@ const HoneyMoon2 = () => {
     const data = [
         {
           image: Destination1,
-          title: "Hunza + Sakrdu",
+          title: "Hunza + Skardu",
           subTitle: "10 Days To Skardu and Hunza – By Road",
           cost: "15,500",
           duration: "10 Days 9 Nights",
@@ -24,15 +24,15 @@ const HoneyMoon2 = () => {
       
         {
           image: Destination2,
-          title: "Sakrdu",
+          title: "Skardu",
           subTitle: "10 Days Package to Skardu By Road",
           cost: "25000",
           duration: "10 Days 9 Nights",
         },
         {
           image: Destination4,
-          title: "Naran+Shogran",
-          subTitle: "4 Days package to Naran and Shogran By Road",
+          title: "Deosai + Astore",
+          subTitle: "4 Days package to Astore and Deosai By Road",
           cost: "35000",
           duration: " 4 Days 5 Nights",
         },

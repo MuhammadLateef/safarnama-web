@@ -17,7 +17,7 @@ export default function HoneyMoon() {
   const data = [
     {
       image: Destination1,
-      title: "Hunza + Sakrdu",
+      title: "Hunza + Skardu",
       subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
       cost: "15,500",
       duration: "10 Days 9 Nights",
@@ -25,14 +25,14 @@ export default function HoneyMoon() {
    
     {
       image: Destination3,
-      title: "Sakrdu + Hunza",
+      title: "Skardu + Hunza",
       subTitle: "10 Days Honeymoon Package to Skardu - By Air",
       cost: "35000",
       duration: "9 Days 8 Nights",
     },
     {
       image: Destination2,
-      title: "Hunza + Sakrdu",
+      title: "Hunza + Skardu",
       subTitle: "10 Days Honeymoon Hunza to Skardu - By Air",
       cost: "25000",
       duration: "10 Days 9 Nights",

@@ -6,12 +6,14 @@ import Recommend from "../components/Recommend";
 import Services from "../components/Services";
 // import Customtour from "../components/Customtour"
 import Testimonials from "../components/Testimonials";
+import Destinition from "./destinition";
 const home = () => {
   return (
     <>
 
       <Hero />
       <Services />
+      <Destinition />
       <Recommend />
       <HoneyMoon />
       <HoneyMoon2 />
