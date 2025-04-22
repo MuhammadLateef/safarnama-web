@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { DestinationCard } from "../components/destination-card";
-import Hunza from "../assets/top_destinations/IMG_4678.jpg";
-import Skardu from "../assets/top_destinations/IMG_4651.jpg";
-import Nagar from "../assets/top_destinations/IMG_4680.jpg";
-import Gilgit from "../assets/top_destinations/IMG_4655.jpg";
-import Astore from "../assets/top_destinations/IMG_4654.jpg";
-import Deosai from "../assets/top_destinations/IMG_4665.jpg";
+import Hunza from "../assets/top_destinations/IMG_4678.JPG";
+import Skardu from "../assets/top_destinations/IMG_4651.JPG";
+import Nagar from "../assets/top_destinations/IMG_4680.JPG";
+import Gilgit from "../assets/top_destinations/IMG_4655.JPG";
+import Astore from "../assets/top_destinations/IMG_4654.JPG";
+import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 const Destinition = () => {
   return (
     <section id="destinations" className="py-12 md:py-16 bg-slate-50">
