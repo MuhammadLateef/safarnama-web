@@ -7,7 +7,7 @@ import AppRoutes from "./AppRoutes"; // Import AppRoutes
 export default function App() {
   return (
     <Router>
-      <main className="w-full overflow-hidden">
+      <main className="w-full overflow-hidden" style={{ fontFamily: 'Roboto Mono, monospace' }}>
         <ScrollToTop />
         <Navbar />
         <AppRoutes /> {/* Using AppRoutes here */}

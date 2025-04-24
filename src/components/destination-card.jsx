@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 
 export function DestinationCard({ title, description, image, link }) {
   const [isHovered, setIsHovered] = useState(false)
-
+console.log("LINK: ", link )
   return (
     <Link
-      href={link}
+      to={`${link}`}
       className="group block relative overflow-hidden rounded-xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
