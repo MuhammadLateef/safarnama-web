@@ -184,15 +184,15 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400 text-sm">© {new Date().getFullYear()} Safarnama. All rights reserved.</p>
+            <p className="text-slate-700 text-sm">© {new Date().getFullYear()} Safarnama. All rights reserved.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="#" className="text-slate-400 n-colors">
+              <Link href="#" className="text-slate-700 n-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-slate-400 n-colors">
+              <Link href="#" className="text-slate-700 n-colors">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-slate-400 n-colors">
+              <Link href="#" className="text-slate-700 n-colors">
                 Cookie Policy
               </Link>
             </div>

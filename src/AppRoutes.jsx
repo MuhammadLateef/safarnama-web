@@ -12,6 +12,7 @@ import Transportation from "./layout/Transport";
 import ContactForm from "./layout/Contactform";
 import Skardu_details from "./pages/Skardu/Skardu_details"
 import TourDetailPage from "./pages/Skardu/TourDetailPage";
+import DronePage from "./pages/Drone-shots/DronePage";
 const AppRoutes = () => {
 
   return (
@@ -29,6 +30,7 @@ const AppRoutes = () => {
       <Route path="/contact" element={<ContactForm />} />
       <Route path="/skardu-visits" element={<Skardu_details />} />
       <Route path="/tour/:id" element={<TourDetailPage />} />
+      <Route path="/drone" element={<DronePage />} />
     </Routes>
   );
 };
