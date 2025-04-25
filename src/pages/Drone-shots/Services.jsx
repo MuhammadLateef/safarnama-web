@@ -1,7 +1,7 @@
 function DroneServices() {
     return (
-      <div className="py-16 bg-black">
-        <div className="container mx-auto px-4">
+      <div className="py-16 ">
+        <div className="container max-w-[90%] mx-auto px-4">
           {/* Arial Video Services */}
           <div className="flex flex-col md:flex-row items-center mb-20 gap-8">
             <div className="md:w-1/2">
@@ -33,11 +33,11 @@ function DroneServices() {
                   alt="Drone photography"
                   className="w-full h-auto object-cover"
                 />
-                <img
+                {/* <img
                   src="https://propakistani.pk/wp-content/uploads/2022/07/Untitled-design-20.jpg"
                   alt="City aerial view"
                   className="w-full h-auto object-cover"
-                />
+                /> */}
               </div>
             </div>
             <div className="md:w-1/2">

@@ -15,7 +15,7 @@ function DronePage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gray-200 text-black">
       {/* Hero Section */}
       <HeroSection />
 
@@ -30,7 +30,7 @@ function DronePage() {
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-white text-center relative z-10">
           <h2 className="text-2xl font-bold mb-6">Ready to start your Arial Video?</h2>
           <button
             onClick={openForm}
