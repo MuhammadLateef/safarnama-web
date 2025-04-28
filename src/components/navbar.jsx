@@ -319,7 +319,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Custom Tour", path: "/custom-tour" },
+    { name: "Tours", path: "/tourism" },
     { 
       name: "Hotels", 
       path: "/hotels",
@@ -337,8 +337,8 @@ export default function Navbar() {
       name: "Photography Service", 
       path: "/photography",
       dropdown: [
-        { name: "Wedding Shots", path: "/photography/wedding" },
-        { name: "Drone Shots", path: "/drone" }
+        { name: "Wedding Shoots", path: "/photography/wedding" },
+        { name: "Drone Shoots", path: "/drone-shoots" }
       ]
     },
 

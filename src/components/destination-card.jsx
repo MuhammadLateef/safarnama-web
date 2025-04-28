@@ -2,12 +2,12 @@ import { useState } from "react"
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom"
 
-export function DestinationCard({ title, description, image, link }) {
+export function DestinationCard({ title, description, image, slug }) {
   const [isHovered, setIsHovered] = useState(false)
-console.log("LINK: ", link )
+  
   return (
     <Link
-      to={`${link}`}
+      to={`/destinations/${slug}`}
       className="group block relative overflow-hidden rounded-xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -16,7 +16,6 @@ console.log("LINK: ", link )
         <img
           src={image || "/placeholder.svg"}
           alt={title}
-         
           className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? "scale-110" : "scale-100"}`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />

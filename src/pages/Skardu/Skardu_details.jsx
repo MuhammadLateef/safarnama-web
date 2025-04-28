@@ -1,5 +1,5 @@
 import TourGrid from "../../components/Skardu_grid"
-import { tourPackages } from "../../data/Skardu_data_tour"
+import { tourPackages } from "../../assets/data/Skardu_data_tour"
 
 function HomePage() {
   return (

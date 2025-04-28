@@ -7,6 +7,7 @@ import Services from "../components/Services";
 // import Customtour from "../components/Customtour"
 import Testimonials from "../components/Testimonials";
 import Destinition from "./destinition";
+import Booknow from "../pages/book-form/Book-now"
 const home = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const home = () => {
       <Grouptour />
       {/* <Customtour /> */}
       <Testimonials/>
+      <Booknow />
     </>
   );
 };
