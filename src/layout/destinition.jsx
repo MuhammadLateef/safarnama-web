@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { DestinationCard } from "../components/destination-card";
 import Hunza from "../assets/hunza/altitfort.jpg";
@@ -6,12 +6,6 @@ import Skardu from "../assets/top_destinations/IMG_4651.JPG";
 import Nagar from "../assets/nagar/hoparglacier1.jpg";
 import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
 import Astore from "../assets/astore/rama-lake2.jpg";
-import Ghizer from "../assets/ghizer/gupis_fort.jpg";
-import Ghanche from "../assets/ghanche/khaplu-fort.jpg";
-import Kharmang from "../assets/kharmang/kharmang-district.jpg";
-import Shigar from "../assets/shigar/shigar-fort.jpg";
-import Diamer from "../assets/diamer/fairy-meadows.webp";
-import Roundu from "../assets/ghizer/gupis_fort.jpg";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 const Destination = () => {
@@ -67,15 +61,39 @@ const Destination = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {destinations.map((destination) => (
-            <DestinationCard
-              key={destination.slug}
-              title={destination.title}
-              description={destination.description}
-              image={destination.image}
-              slug={destination.slug}
-            />
+            <div key={destination.slug} className="group relative bg-white border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              {/* Image */}
+              <img src={destination.image} alt={destination.title} className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-300" />
+
+              {/* Title and Description */}
+              {/* <div className="absolute inset-0 flex flex-col justify-between p-4">
+                
+                <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-[#FAB12F] transition-all duration-300 group-hover:-translate-y-4">
+                  {destination.title}
+                </h3>
+
+                
+                <div className="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 translate-y-4">
+                  <p className="text-sm text-gray-600">{destination.description}</p>
+                </div> */}  <div className="absolute bottom-4 left-4 right-4 z-10 text-white transition-all duration-300">
+                <h3 className="text-2xl font-bold transition-all duration-300 group-hover:-translate-y-4">
+                  {destination.title}
+                </h3>
+
+                <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                  <p className="text-sm">
+                    {destination.description}
+                  </p> </div>
+
+                {/* Link */}
+                <Link to={`/destinations/${destination.slug}`} className="text-sm font-semibold text-green-400 mt-2 inline-block">
+                  Explore →
+                </Link>
+              </div>
+            </div>
           ))}
         </div>
+
         <div className="flex justify-center pt-6 pb-8">
           <Link
             to="/explore-pakistan"
