@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom"
 import { FaCalendarAlt, FaPhone, FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { LuArrowLeft } from "react-icons/lu"
 import { tourPackages, companyInfo } from "../../assets/data/Skardu_data_tour"
-
+import TourGrid from "../../components/Skardu_grid"
 function TourDetailPage() {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -52,7 +52,7 @@ function TourDetailPage() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl mx-auto my-10 px-4">
+      <div className="flex flex-col lg:flex-row gap-8 w-full max-w-[90%] mx-auto my-10 px-4">
         {/* Left Section */}
         <div className="w-full lg:w-2/3 space-y-8">
           {/* Back Button */}
@@ -63,17 +63,15 @@ function TourDetailPage() {
             <LuArrowLeft className="transition-transform duration-300 group-hover:-translate-x-1" />
             Back to Book Page
           </Link>
-
           {/* Tabs */}
           <div className="flex border-b border-gray-300">
             {["Overview", "Itinerary", "Inclusions", "Gallery"].map((tab) => (
               <button
                 key={tab}
-                className={`px-6 py-3 text-sm font-semibold transition-colors ${
-                  activeTab === tab
+                className={`px-6 py-3 text-sm font-semibold transition-colors ${activeTab === tab
                     ? "text-blue-600 border-b-2 border-blue-600"
                     : "hover:text-blue-500"
-                }`}
+                  }`}
                 onClick={() => setActiveTab(tab)}
               >
                 {tab}
@@ -237,6 +235,9 @@ function TourDetailPage() {
             <button className="text-blue-600 hover:underline mt-2">Get Directions</button>
           </div>
         </aside>
+      </div>
+      <div className=" max-w-[90%] mx-auto container py-10">
+        <TourGrid tours={tourPackages} />
       </div>
     </div>
   )
