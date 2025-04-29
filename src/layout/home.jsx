@@ -15,7 +15,7 @@ const home = () => {
       <Hero />
       <Services />
       <Destinition />
-      <Recommend />
+      {/* <Recommend /> */}
       <HoneyMoon />
       <HoneyMoon2 />
       <Grouptour />

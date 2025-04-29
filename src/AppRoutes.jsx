@@ -38,7 +38,7 @@ const AppRoutes = () => {
         <Route path="/tourism" element={<Skardu_details />} />
         <Route path="/tour/:id" element={<TourDetailPage />} />
         <Route path="/drone-shoots" element={<DronePage />} />
-        <Route path="/wedding-shots" element={<WeddingPage />} />
+        <Route path="/wedding-shoots" element={<WeddingPage />} />
       </Routes>
     </>
   );

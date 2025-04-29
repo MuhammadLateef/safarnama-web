@@ -34,14 +34,14 @@ export default function ExplorePakistan() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div id="hero" className="relative z-0 mt-8 w-full h-full max-w-[90%] mx-auto">
-        <div className="relative w-full h-[60vh] sm:h-[60vh] mt-8 bg-black rounded-lg overflow-hidden">
+      <div className="relative z-0 mt-8 w-full h-full max-w-[90%] mx-auto">
+        <div className="relative w-full h-[60vh] mt-8 bg-black rounded-lg overflow-hidden">
           <img
             src={heroImage}
             alt="Hero"
             className="w-full h-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md" />
         </div>
         <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center text-center gap-4 z-10 px-4 md:px-10">
           <div className="text-white">
@@ -70,22 +70,24 @@ export default function ExplorePakistan() {
             >
               <img
                 src={destination.image}
-                loading="lazy"
                 alt={destination.title}
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
-              {/* Title + Description + Explore */}
-              <div className="absolute bottom-4 left-4 right-4 z-10 text-white transition-all duration-300">
-                <h3 className="text-2xl font-bold transition-all duration-300 group-hover:-translate-y-4">
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+              {/* Hover overlay (fades in) */}
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              {/* Text Content */}
+              <div className="absolute bottom-4 left-4 right-4 z-10 text-white">
+                <h3 className="text-xl font-bold mb-2 transition-transform duration-300 group-hover:-translate-y-2">
                   {destination.title}
                 </h3>
 
-                <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  <p className="text-sm">
-                    {destination.description}
-                  </p>
+                <div className="transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
+                  <p className="text-sm">{destination.description}</p>
                   <span className="mt-2 inline-block text-sm font-semibold text-green-400">
                     Explore →
                   </span>

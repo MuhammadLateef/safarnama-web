@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DestinationCard } from "../components/destination-card";
 import Hunza from "../assets/hunza/altitfort.jpg";
 import Skardu from "../assets/top_destinations/IMG_4651.JPG";
 import Nagar from "../assets/nagar/hoparglacier1.jpg";
@@ -61,32 +60,29 @@ const Destination = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {destinations.map((destination) => (
-            <div key={destination.slug} className="group relative bg-white border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+            <div
+              key={destination.slug}
+              className="group relative bg-white border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+            >
               {/* Image */}
-              <img src={destination.image} alt={destination.title} className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-300" />
+              <img
+                src={destination.image}
+                alt={destination.title}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-300"
+              />
 
-              {/* Title and Description */}
-              {/* <div className="absolute inset-0 flex flex-col justify-between p-4">
-                
-                <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-[#FAB12F] transition-all duration-300 group-hover:-translate-y-4">
+              {/* Overlay content with hover reveal effect */}
+              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-4">
+                <h3 className="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-3 transition-all duration-300">
                   {destination.title}
                 </h3>
-
-                
-                <div className="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 translate-y-4">
-                  <p className="text-sm text-gray-600">{destination.description}</p>
-                </div> */}  <div className="absolute bottom-4 left-4 right-4 z-10 text-white transition-all duration-300">
-                <h3 className="text-2xl font-bold transition-all duration-300 group-hover:-translate-y-4">
-                  {destination.title}
-                </h3>
-
-                <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  <p className="text-sm">
-                    {destination.description}
-                  </p> </div>
-
-                {/* Link */}
-                <Link to={`/destinations/${destination.slug}`} className="text-sm font-semibold text-green-400 mt-2 inline-block">
+                <p className="text-sm text-white opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-300">
+                  {destination.description}
+                </p>
+                <Link
+                  to={`/destinations/${destination.slug}`}
+                  className="mt-2 text-sm font-semibold text-[#FAB12F] opacity-0 group-hover:opacity-100 transition-all duration-300"
+                >
                   Explore →
                 </Link>
               </div>
@@ -101,7 +97,11 @@ const Destination = () => {
           >
             <span className="text-lg">Explore Gilgit Baltistan</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
             </svg>
           </Link>
         </div>
