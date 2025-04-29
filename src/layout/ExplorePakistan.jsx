@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/Gilgit.jpg";
 import Hunza from "../assets/hunza/altitfort.jpg";
 import Nagar from "../assets/nagar/hoparglacier1.jpg";
-import Skardu from "../assets/top_destinations/skardu.jpg";
+import Skardu from "../assets/top_destinations/skardu.JPG";
 import Gilgit from "../assets/gilgit/gilgit-river2.jpg";
 import Astore from "../assets/astore/rama-lake2.jpg";
 import Ghizer from "../assets/ghizer/gupis_fort.jpg";
@@ -11,7 +11,7 @@ import Kharmang from "../assets/kharmang/kharmang-district.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
 import Roundu from "../assets/ghizer/gupis_fort.jpg";
-import Deosai from "../assets/top_destinations/IMG_4665.JPG";
+import Deosai from "../assets/top_destinations/IMG_4665.jpg";
 
 const destinations = [
   { image: Hunza, title: "Hunza", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
