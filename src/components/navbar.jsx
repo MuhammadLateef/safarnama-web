@@ -323,13 +323,13 @@ export default function Navbar() {
     { 
       name: "Hotels", 
       path: "/hotels",
-      dropdown: [
-        { name: "Skardu", path: "/hotels/skardu" },
-        { name: "Hunza", path: "/hotels/hunza" },
-        { name: "Astore", path: "/hotels/astore" },
-        { name: "Ghizer", path: "/hotels/ghizer" },
-        { name: "Gilgit", path: "/hotels/gilgit" }
-      ]
+      // dropdown: [
+      //   { name: "Skardu", path: "/hotels/skardu" },
+      //   { name: "Hunza", path: "/hotels/hunza" },
+      //   { name: "Astore", path: "/hotels/astore" },
+      //   { name: "Ghizer", path: "/hotels/ghizer" },
+      //   { name: "Gilgit", path: "/hotels/gilgit" }
+      // ]
     },
     { name: "Explore Gilgit Baltistan", path: "/explore-pakistan" },
     { name: "Transport", path: "/transportation" },
@@ -337,7 +337,7 @@ export default function Navbar() {
       name: "Photography Service", 
       path: "/photography",
       dropdown: [
-        { name: "Wedding Shoots", path: "/photography/wedding" },
+        { name: "Wedding Shoots", path: "/wedding-shoots" },
         { name: "Drone Shoots", path: "/drone-shoots" }
       ]
     },

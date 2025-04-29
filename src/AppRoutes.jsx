@@ -13,6 +13,7 @@ import Transportation from "./layout/Transport";
 import ContactForm from "./layout/Contactform";
 import Skardu_details from "./pages/Skardu/Skardu_details"
 import TourDetailPage from "./pages/Skardu/TourDetailPage";
+import WeddingPage from "./pages/Wedding-shoots/WeddingPage";
 import DronePage from "./pages/Drone-shoots/DronePage";
 import DestinationDetail from "./layout/destination-details-page";
 import ScrollHandler from "./components/ScrollHandler";
@@ -37,6 +38,7 @@ const AppRoutes = () => {
         <Route path="/tourism" element={<Skardu_details />} />
         <Route path="/tour/:id" element={<TourDetailPage />} />
         <Route path="/drone-shoots" element={<DronePage />} />
+        <Route path="/wedding-shoots" element={<WeddingPage />} />
       </Routes>
     </>
   );
