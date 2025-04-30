@@ -101,6 +101,7 @@ import Destination1 from "../assets/hard-rock.jpg";
 import Destination2 from "../assets/Honey-Sakrdu.jpeg";
 import Destination3 from "../assets/Byair.jpg";
 import Destination4 from "../assets/Hunzabyair.jpg";
+import HoneyMoon1 from "../assets/honey-moon1.jpg";
 import info1 from "../assets/car(2).png";
 import info2 from "../assets/hotel.png";
 import info3 from "../assets/dish.png";
@@ -111,6 +112,13 @@ import { Pagination } from "swiper/modules";
 
 export default function HoneyMoon() {
   const data = [
+    {
+      image: HoneyMoon1,
+      title: "Hunza",
+      subTitle: "4 Days Honeymoon to Hunza - By Air",
+      cost: "00",
+      duration: "4 Days 5 Nights",
+    },
     {
       image: Destination1,
       title: "Hunza + Skardu",
@@ -139,6 +147,7 @@ export default function HoneyMoon() {
       cost: "00",
       duration: "4 Days 5 Nights",
     },
+   
   ];
 
   return (

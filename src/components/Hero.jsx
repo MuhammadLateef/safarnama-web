@@ -71,14 +71,45 @@ import { motion } from "framer-motion";
 import homeImage1 from "../assets/Gilgit.jpg";
 import homeImage2 from "../assets/Hero2.png";
 import homeImage3 from "../assets/Hero3.png";
+import homeImage4 from "../assets/Hero4.jpg";
 
 const words = ["Travel", "Discover", "Experience", "Adventure"];
-const images = [homeImage1, homeImage2, homeImage3];
+const images = [homeImage1, homeImage2,  homeImage4];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
   const [imgIndex, setImgIndex] = useState(0);
+  const [formData, setFormData] = useState({
+    name: "",
+    checkin: "",
+    checkout: "",
+  });
 
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name,checkin,checkout } = formData;
+
+    // Format message for WhatsApp
+    const whatsappMessage =
+      `*Name :* ${name}%0a` +
+      `*Check in :* ${checkin}%0a` +
+      `*Check out :* ${checkout}%0a`;
+
+    // Replace with your WhatsApp number
+    const whatsappUrl = `https://wa.me/923401557615?text=${whatsappMessage}`;
+
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank').focus();
+  };
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % words.length);
@@ -88,7 +119,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div id="hero" className="relative z-0 mt-8 w-full h-full max-w-[90%] mx-auto">
+    <div id="hero" className="relative z-0 w-full h-full mx-auto">
       {/* Background Image with Overlay */}
       <div className="relative h-full">
         <img
@@ -122,43 +153,51 @@ export default function Hero() {
         </div>
 
         {/* Booking Form */}
-        <div className="bg-white opacity-90 p-4 rounded-md flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl z-20">
-          {/* Destination */}
+        <form onSubmit={handleSubmit} className="bg-white opacity-90 p-4 rounded-md flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl z-20">
+         
           <div className="flex flex-col w-full md:w-1/4">
             <label className="text-blue-900 text-lg">Where you want to go</label>
             <input
               type="text"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Search Your location"
               className="text-center border border-gray-300 placeholder:text-grey-700 rounded-md px-2 py-1 w-full focus:outline-blue-500"
             />
           </div>
 
-          {/* Dates and Button */}
+        
           <div className="flex flex-col md:flex-row gap-4 w-full md:w-3/4">
-            {/* Check-in */}
+           
             <div className="flex flex-col w-full md:w-1/3">
               <label className="text-blue-900 text-lg">Check-in</label>
               <input
+                id="checkin"
+                value={formData.checkin}
+                onChange={handleChange}
                 type="date"
                 className="text-center border border-gray-300 rounded-md px-2 py-1 w-full focus:outline-blue-500"
               />
             </div>
-            {/* Check-out */}
+         
             <div className="flex flex-col w-full md:w-1/3">
               <label className="text-blue-900 text-lg">Check-out</label>
               <input
+                id="checkout"
+                value={formData.checkout}
+                onChange={handleChange}
                 type="date"
                 className="text-center border border-gray-300 rounded-md px-2 py-1 w-full focus:outline-blue-500"
               />
             </div>
-            {/* Button */}
             <div className="w-full md:w-1/3 flex justify-center md:justify-end">
-              <button className="bg-blue-600 text-white py-2 px-4 rounded-md uppercase text-lg transition duration-300 hover:bg-blue-900 w-full md:w-auto">
+              <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-md uppercase text-lg transition duration-300 hover:bg-blue-900 w-full md:w-auto">
                 Explore Now
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

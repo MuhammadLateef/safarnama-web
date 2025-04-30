@@ -56,7 +56,7 @@ const destinationData = {
     hunza: {
         title: "Hunza Valley",
         mainImage: Hunza,
-        images: [Hunza, Hunza1, Hunza2,Hunza3,Hunza4], // Add more images as needed
+        images: [Hunza, Hunza1, Hunza2, Hunza3, Hunza4], // Add more images as needed
         history: `Hunza Valley is a mountainous valley in the Gilgit-Baltistan region of Pakistan. 
               The Hunza valley is situated at an elevation of 2,438 meters. 
               The territory of Hunza was an independent principality for centuries, ruled by the Mirs of Hunza.
@@ -99,7 +99,7 @@ const destinationData = {
     gilgit: {
         title: "Gilgit City",
         mainImage: Gilgit,
-        images: [Gilgit,Gilgit2, Gilgit3, Gilgit4,Gilgit5],
+        images: [Gilgit, Gilgit2, Gilgit3, Gilgit4, Gilgit5],
         history: `Gilgit is the capital city of Gilgit-Baltistan region and has served as an important trade center
              along the ancient Silk Road. The city has a strategic location at the confluence of the Gilgit
              and Hunza rivers, making it historically significant for trade and cultural exchange.`,
@@ -118,7 +118,7 @@ const destinationData = {
     skardu: {
         title: "Skardu Valley",
         mainImage: Skardu,
-        images: [Skardu, Skardu2, Skardu3,Skardu4,Skardu5,Skardu6,Skardu7,Skardu8],
+        images: [Skardu, Skardu2, Skardu3, Skardu4, Skardu5, Skardu6, Skardu7, Skardu8],
         history: `Skardu is the capital of Baltistan division and was part of the ancient kingdom of Little Tibet.
              The valley has been an important center for Tibetan Buddhism and later Islamic culture. It served
              as a gateway to the high mountains of the Karakoram range.`,
@@ -169,7 +169,7 @@ const destinationData = {
     ghanche: {
         title: "Ghanche District",
         mainImage: Ghanche, // Using placeholder image, replace with actual Ghanche image
-        images: [Ghanche,Ghanche2, Ghanche3, Ghanche4,Ghanche5], // Add actual images when available
+        images: [Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
         history: `Ghanche is the easternmost district of Gilgit-Baltistan, Pakistan, bordering India.
              It was established as a district in 1977 and includes the historic Baltistan region.
              The name "Ghanche" comes from the Balti language, meaning "glacier," reflecting the 
@@ -186,11 +186,11 @@ const destinationData = {
              Traditional music, dance, and polo are important cultural elements. The architecture 
              features stone and wood buildings with distinctive Tibetan-influenced design elements.`
     },
-    
+
     ghizer: {
         title: "Ghizer District",
         mainImage: Ghizer, // Using placeholder image, replace with actual Ghizer image
-        images: [Ghizer, Ghizer2, Ghizer3, Ghizer4,Ghizer5], // Add actual images when available
+        images: [Ghizer, Ghizer2, Ghizer3, Ghizer4, Ghizer5], // Add actual images when available
         history: `Ghizer district, located in the western part of Gilgit-Baltistan, derives its name 
              from the Gupis-Yasin valley. It was established as a separate district in 1974.
              The district has served as an important trade route connecting Gilgit with Chitral
@@ -207,11 +207,11 @@ const destinationData = {
              different regions. Traditional music, handicrafts, and the annual Shandur Polo Festival
              are significant cultural elements of the region.`
     },
-    
+
     shigar: {
         title: "Shigar District",
         mainImage: Shigar, // Using placeholder image, replace with actual Shigar image
-        images: [Shigar, Shigar2, Shigar3,Shigar4,Shigar5], // Add actual images when available
+        images: [Shigar, Shigar2, Shigar3, Shigar4, Shigar5], // Add actual images when available
         history: `Shigar district was formerly a small kingdom ruled by the Amacha dynasty before
              becoming part of the state of Jammu and Kashmir. It became a separate district in 2015.
              The valley has been an important stopping point for mountaineers heading to the Karakoram
@@ -228,11 +228,11 @@ const destinationData = {
              for its unique cultural practices, traditional music, and handicrafts including
              woodwork and stone carving.`
     },
-    
+
     kharmang: {
         title: "Kharmang District",
         mainImage: kharmang, // Using placeholder image, replace with actual Kharmang image
-        images: [kharmang, kharmang2, kharmang3,kharmang4], // Add actual images when available
+        images: [kharmang, kharmang2, kharmang3, kharmang4], // Add actual images when available
         history: `Kharmang district, located along the Line of Control with India, was established
              as a separate district in 2015. Historically, it was part of the Baltistan region and
              has archaeological sites showing Buddhist influence before the region converted to Islam
@@ -249,7 +249,7 @@ const destinationData = {
              strong influences from both Tibetan traditions and Islamic practices, creating a unique
              cultural identity.`
     },
-    
+
     roundu: {
         title: "Roundu District",
         mainImage: Roundu2, // Using placeholder image, replace with actual Roundu image
@@ -269,15 +269,16 @@ const destinationData = {
              The district is known for its preserved traditional lifestyle, agricultural practices,
              and architectural styles that have remained relatively unchanged over generations.`
     },
-    
+
     diamer: {
-        title: "Diamer District",
+        title: "Fairy Meadows National Park",
         mainImage: Diamer, // Using placeholder image, replace with actual Diamer image
-        images: [Diamer,Diamer2], // Add actual images when available
-        history: `Diamer district is located in the southwestern part of Gilgit-Baltistan. The area
-             has historical significance as part of ancient trade routes and has been mentioned in
-             accounts of Chinese travelers. The district is named after Nanga Parbat, which was
-             formerly known as Diamir.`,
+        images: [Diamer, Diamer2], // Add actual images when available
+        history: `Fairy Meadows National Park is a breathtaking alpine destination located in the Diamer District of Gilgit-Baltistan, Pakistan, near the base camp of the mighty Nanga Parbat, the world’s ninth-highest mountain. Renowned for its lush green meadows, panoramic mountain views, and peaceful atmosphere, Fairy Meadows is one of the most Instagrammable tourist spots in Northern Pakistan.
+
+This scenic valley is accessible via a jeep track from Raikot Bridge on the Karakoram Highway (KKH), followed by a short trek, making it a favorite among hiking and adventure lovers. The area offers unmatched views of Nanga Parbat's north face, making it a dream location for camping, landscape photography, drone videography, and nature retreats.
+
+Whether you're planning a honeymoon in the mountains, an adventure-filled travel vlog, or a wedding shoot amidst nature, Fairy Meadows National Park delivers an unforgettable experience in the heart of Pakistan’s natural beauty.`,
         attractions: [
             "Fairy Meadows - A scenic meadow offering spectacular views of Nanga Parbat",
             "Nanga Parbat - The ninth highest mountain in the world at 8,126 meters",

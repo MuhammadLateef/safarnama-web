@@ -14,18 +14,18 @@ import Roundu from "../assets/ghizer/gupis_fort.jpg";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 const destinations = [
-  { image: Hunza, title: "Hunza", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
-  { image: Nagar, title: "Nagar", slug: "nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture." },
-  { image: Gilgit, title: "Gilgit", slug: "gilgit", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities." },
+  { image: Hunza, title: "Hunza Valley", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
+  { image: Nagar, title: "Rakaposhi Nagar", slug: "nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture." },
+  { image: Gilgit, title: "Gilgit City", slug: "gilgit", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities." },
   { image: Astore, title: "Astore", slug: "astore", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park." },
   { image: Skardu, title: "Skardu", slug: "skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2." },
   { image: Deosai, title: "Deosai National Park", slug: "deosai-national-park", description: "One of the world's highest plateaus, known as 'The Land of Giants' with unique flora and fauna." },
-  { image: Ghanche, title: "Ghanche", slug: "ghanche", description: "The easternmost district of Pakistan, known for Khaplu Palace and major peaks like K7." },
-  { image: Ghizer, title: "Ghizer", slug: "ghizer", description: "Known for Phander Lake, Shandur Pass, trout fishing, and diverse cultures." },
-  { image: Shigar, title: "Shigar", slug: "shigar", description: "Famous for its valley, wooden mosques, and as the gateway to Baltoro glacier." },
-  { image: Kharmang, title: "Kharmang", slug: "kharmang", description: "A border district with beautiful landscapes and ancient heritage sites." },
-  { image: Roundu, title: "Roundu", slug: "roundu", description: "A remote district with stunning natural beauty and traditional lifestyles." },
-  { image: Diamer, title: "Diamer", slug: "diamer", description: "Home to Nanga Parbat and Fairy Meadows, offering stunning trekking." }
+  { image: Ghanche, title: "Khaplu Valley", slug: "ghanche", description: "The easternmost district of Pakistan, known for Khaplu Palace and major peaks like K7." },
+  { image: Ghizer, title: "Ghizer Valley", slug: "ghizer", description: "Known for Phander Lake, Shandur Pass, trout fishing, and diverse cultures." },
+  { image: Shigar, title: "Shigar Valley", slug: "shigar", description: "Famous for its valley, wooden mosques, and as the gateway to Baltoro glacier." },
+  { image: Kharmang, title: "Manthokha Waterfall", slug: "kharmang", description: "This waterfall is approx 180 feet high from ground and located 60 km away from main Skradu town." },
+  { image: Roundu, title: "Bilamik Valley", slug: "roundu", description: "Bilamik Valley, also known as Bilamik Roundu, lies in the Skardu District of Gilgit Baltistan" },
+  { image: Diamer, title: "Fairy Meadows", slug: "diamer", description: "Home to Nanga Parbat and Fairy Meadows, offering stunning trekking." }
 ];
 
 export default function ExplorePakistan() {
@@ -34,8 +34,8 @@ export default function ExplorePakistan() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="relative z-0 mt-8 w-full h-full max-w-[90%] mx-auto">
-        <div className="relative w-full h-[60vh] mt-8 bg-black rounded-lg overflow-hidden">
+      <div className="relative z-0 w-full h-full mx-auto">
+        <div className="relative w-full h-[60vh] bg-black rounded-lg overflow-hidden">
           <img
             src={heroImage}
             alt="Hero"
@@ -58,7 +58,7 @@ export default function ExplorePakistan() {
       {/* All Districts Section */}
       <div className="py-16 max-w-[90%] mx-auto">
         <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">
-          All Districts of Gilgit Baltistan
+          All destination of Gilgit Baltistan
         </h2>
 
         <div className="mb-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

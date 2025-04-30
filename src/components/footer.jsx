@@ -112,7 +112,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="#" className=" ">
-                    Kalash Valley Cultural Tour
+                    Khaplu Valley Cultural Tour
                   </Link>
                 </li>
                 <li>
