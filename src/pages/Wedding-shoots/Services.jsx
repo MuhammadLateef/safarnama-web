@@ -1,4 +1,4 @@
-import Image2 from "../../assets/WEEDING.JPG"
+import Image2 from "../../assets/WEEDING.jpg"
 import Image1 from "../../assets/drone-shoot/white-drone2.png"
 
 function WeddingServices() {
