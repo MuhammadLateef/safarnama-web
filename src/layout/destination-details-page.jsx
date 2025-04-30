@@ -33,7 +33,7 @@ import Ghanche4 from "../assets/ghanche/machulu-valley.jpg";
 import Ghanche5 from "../assets/ghanche/thalle-valley.jpg";
 import Ghizer from "../assets/ghizer/gupis_fort.jpg";
 import Ghizer2 from "../assets/ghizer/lalak-jan.jpg";
-import Ghizer3 from "../assets/ghizer/yasin-valley.jpg";
+import Ghizer3 from "../assets/ghizer/Yasin-valley.jpg";
 import Ghizer4 from "../assets/ghizer/phander-valley.jpg";
 import Ghizer5 from "../assets/ghizer/phander-lake.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
@@ -49,7 +49,7 @@ import Diamer from "../assets/diamer/fairy-meadows.webp";
 import Diamer2 from "../assets/diamer/fairy-meadows2.jpg";
 import Roundu from "../assets/roundu/tormik-valley.jpg"
 import Roundu2 from "../assets/roundu/tormik-valley2.jpg"
-import Deosai from "../assets/top_destinations/IMG_4665.jpg";
+import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 // You would typically fetch this data from an API
 const destinationData = {

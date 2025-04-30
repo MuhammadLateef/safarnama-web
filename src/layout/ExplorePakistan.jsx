@@ -11,7 +11,7 @@ import Kharmang from "../assets/kharmang/kharmang-district.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
 import Roundu from "../assets/ghizer/gupis_fort.jpg";
-import Deosai from "../assets/top_destinations/IMG_4665.jpg";
+import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 const destinations = [
   { image: Hunza, title: "Hunza", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
