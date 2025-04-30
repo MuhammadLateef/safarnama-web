@@ -49,7 +49,7 @@ import Diamer from "../assets/diamer/fairy-meadows.webp";
 import Diamer2 from "../assets/diamer/fairy-meadows2.jpg";
 import Roundu from "../assets/roundu/tormik-valley.jpg"
 import Roundu2 from "../assets/roundu/tormik-valley2.jpg"
-import Deosai from "../assets/top_destinations/IMG_4665.jpg";
+import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 // You would typically fetch this data from an API
 const destinationData = {
