@@ -144,7 +144,7 @@ const Destination = () => {
           {destinations.map((destination) => (
             <div
               key={destination.slug}
-              className="group relative bg-white border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              className="group relative bg-white border rounded-sm overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {/* Image */}
               <img

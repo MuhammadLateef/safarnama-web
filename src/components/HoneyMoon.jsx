@@ -182,7 +182,7 @@ const HoverCard = ({ destination }) => {
 
   return (
     <div
-      className="relative h-80 rounded-lg overflow-hidden shadow-lg group"
+      className="relative h-80 rounded-sm overflow-hidden shadow-lg group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

@@ -31,6 +31,10 @@ import Ghanche2 from "../assets/ghanche/hushe-valley.jpg";
 import Ghanche3 from "../assets/ghanche/khaplu-fort.jpg";
 import Ghanche4 from "../assets/ghanche/machulu-valley.jpg";
 import Ghanche5 from "../assets/ghanche/thalle-valley.jpg";
+import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
+import khaplu2 from "../assets/ghanche/khaplu2.jpeg";
+import khaplu3 from "../assets/ghanche/khaplu3.jpeg";
+import khaplu4 from "../assets/ghanche/khaplu4.jpeg";
 import Ghizer from "../assets/ghizer/gupis_fort.jpg";
 import Ghizer2 from "../assets/ghizer/lalak-jan.jpg";
 import Ghizer3 from "../assets/ghizer/Yasin-valley.jpg";
@@ -50,7 +54,15 @@ import Diamer2 from "../assets/diamer/fairy-meadows2.jpg";
 import Roundu from "../assets/roundu/tormik-valley.jpg"
 import Roundu2 from "../assets/roundu/tormik-valley2.jpg"
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
-
+import {
+    BashoImage1, BashoImage2, BashoImage3, BashoImage4, BashoImage5, BilamikValley1,
+    BilamikValley2,
+    BilamikValley3,
+    BilamikValley4,
+    BilamikValley5,
+    BilamikValley6,
+    BilamikValley7,
+} from "../Index"
 // You would typically fetch this data from an API
 const destinationData = {
     hunza: {
@@ -70,7 +82,14 @@ const destinationData = {
             "Altit Fort - One of the oldest monuments in Gilgit-Baltistan, dating back over 1000 years",
             "Attabad Lake - A beautiful turquoise lake formed after a landslide in 2010",
             "Eagle's Nest - A viewpoint offering panoramic views of Hunza Valley",
-            "Karimabad Bazaar - A marketplace famous for local handicrafts and gemstones"
+            "Karimabad Bazaar - A marketplace famous for local handicrafts and gemstones",
+            "Karimabad",
+            "Borith Lake",
+            "Khunjerab Pass",
+            "Shimshal Pass",
+            "Passu Cones",
+            "Duiker Eagle Nest",
+            "Husseini Suspension Bridge"
         ],
         culture: `The people of Hunza, known as Hunzakuts, speak Burushaski, Shina, and Wakhi languages.
              The majority of the population follows Ismaili Islam. The culture is rich with traditional
@@ -117,8 +136,8 @@ const destinationData = {
     },
     skardu: {
         title: "Skardu Valley",
-        mainImage: Skardu,
-        images: [Skardu, Skardu2, Skardu3, Skardu4, Skardu5, Skardu6, Skardu7, Skardu8],
+        mainImage: BashoImage5,
+        images: [BashoImage1, BashoImage2, BashoImage3, BashoImage4, BashoImage5, Skardu2, Skardu3, Skardu4, Skardu5, Skardu6, Skardu7, Skardu8],
         history: `Skardu is the capital of Baltistan division and was part of the ancient kingdom of Little Tibet.
              The valley has been an important center for Tibetan Buddhism and later Islamic culture. It served
              as a gateway to the high mountains of the Karakoram range.`,
@@ -169,7 +188,7 @@ const destinationData = {
     ghanche: {
         title: "Ghanche District",
         mainImage: Ghanche, // Using placeholder image, replace with actual Ghanche image
-        images: [Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
+        images: [khaplu1, khaplu2, khaplu3, khaplu4, Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
         history: `Ghanche is the easternmost district of Gilgit-Baltistan, Pakistan, bordering India.
              It was established as a district in 1977 and includes the historic Baltistan region.
              The name "Ghanche" comes from the Balti language, meaning "glacier," reflecting the 
@@ -252,8 +271,14 @@ const destinationData = {
 
     roundu: {
         title: "Roundu District",
-        mainImage: Roundu2, // Using placeholder image, replace with actual Roundu image
-        images: [Roundu, Roundu2, Nagar], // Add actual images when available
+        mainImage: BilamikValley3, 
+        images: [BilamikValley1,
+            BilamikValley2,
+            BilamikValley3,
+            BilamikValley4,
+            BilamikValley5,
+            BilamikValley6,
+            BilamikValley7, , Roundu, Roundu2, Nagar], // Add actual images when available
         history: `Roundu district, located along the banks of the Indus River, was established
              as a separate district in 2015. The area has historically been significant for its
              strategic location along ancient trade routes and has preserved many traditional
@@ -354,9 +379,21 @@ const DestinationDetail = () => {
                     <h2 className="text-3xl font-bold text-gray-900 mb-6">Gallery</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {destination.images.map((image, index) => (
-                            <div key={index} className="rounded-lg overflow-hidden">
-                                <img src={image} alt={`${destination.title} - ${index + 1}`} className="w-full h-64 object-cover" />
+                            <div key={index} className="relative rounded-md overflow-hidden shadow hover:shadow-sm">
+                                <div className="group transition-transform duration-200 hover:scale-105">
+                                    {/* Dark overlay */}
+                                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+
+                                    <div className="aspect-[3/2]">
+                                        <img
+                                            src={image}
+                                            alt={`${destination.title} - ${index + 1}`}
+                                            className="w-full h-full object-cover transition duration-200 ease-in-out"
+                                        />
+                                    </div>
+                                </div>
                             </div>
+
                         ))}
                     </div>
                 </div>

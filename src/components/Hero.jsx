@@ -72,9 +72,22 @@ import homeImage1 from "../assets/Gilgit.jpg";
 import homeImage2 from "../assets/Hero2.png";
 import homeImage3 from "../assets/Hero3.png";
 import homeImage4 from "../assets/Hero4.jpg";
-
+import {
+  mainImage1,
+  mainImage2,
+  mainImage3,
+  mainImage4,
+  mainImage5,
+  mainImage6
+} from "../Index";
 const words = ["Travel", "Discover", "Experience", "Adventure"];
-const images = [homeImage1, homeImage2,  homeImage4];
+const images = [
+  mainImage1,
+  mainImage2,
+  mainImage3,
+  mainImage4,
+  mainImage5,
+  mainImage6];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
@@ -96,7 +109,7 @@ export default function Hero() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name,checkin,checkout } = formData;
+    const { name, checkin, checkout } = formData;
 
     // Format message for WhatsApp
     const whatsappMessage =
@@ -125,7 +138,7 @@ export default function Hero() {
         <img
           src={images[imgIndex]}
           alt="Hero"
-          className="w-full h-[560px] md:h-[500px] lg:h-[600px] rounded-md object-fill transition-opacity duration-700"
+          className="w-full h-[560px] md:h-[500px] lg:h-[600px] object-fill transition-opacity duration-700"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md"></div>
       </div>
@@ -154,12 +167,13 @@ export default function Hero() {
 
         {/* Booking Form */}
         <form onSubmit={handleSubmit} className="bg-white opacity-90 p-4 rounded-md flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl z-20">
-         
+
           <div className="flex flex-col w-full md:w-1/4">
             <label className="text-blue-900 text-lg">Where you want to go</label>
             <input
               type="text"
               id="name"
+              required
               value={formData.name}
               onChange={handleChange}
               placeholder="Search Your location"
@@ -167,24 +181,26 @@ export default function Hero() {
             />
           </div>
 
-        
+
           <div className="flex flex-col md:flex-row gap-4 w-full md:w-3/4">
-           
+
             <div className="flex flex-col w-full md:w-1/3">
               <label className="text-blue-900 text-lg">Check-in</label>
               <input
                 id="checkin"
+                required
                 value={formData.checkin}
                 onChange={handleChange}
                 type="date"
                 className="text-center border border-gray-300 rounded-md px-2 py-1 w-full focus:outline-blue-500"
               />
             </div>
-         
+
             <div className="flex flex-col w-full md:w-1/3">
               <label className="text-blue-900 text-lg">Check-out</label>
               <input
                 id="checkout"
+                required
                 value={formData.checkout}
                 onChange={handleChange}
                 type="date"

@@ -57,7 +57,7 @@ function TourDetailPage() {
         <div className="w-full lg:w-2/3 space-y-8">
           {/* Back Button */}
           <Link
-            to="/skardu-visits"
+            to="/"
             className="inline-flex items-center gap-2 border border-gray-300 bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-all"
           >
             <LuArrowLeft className="transition-transform duration-300 group-hover:-translate-x-1" />
@@ -162,7 +162,7 @@ function TourDetailPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {tourDetails.gallery.length > 0 ? (
                   tourDetails.gallery.map((img, idx) => (
-                    <div key={idx} className="overflow-hidden rounded-lg shadow-md">
+                    <div key={idx} className="overflow-hidden rounded-sm shadow-md">
                       <img
                         src={img || "/placeholder.svg"}
                         alt={`Tour image ${idx + 1}`}
