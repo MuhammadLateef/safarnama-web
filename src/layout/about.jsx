@@ -31,9 +31,9 @@ const AboutPage = () => {
     <div className="min-h-screen bg-white text-gray-800">
       {/* Header */}
       <section className="bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-900 mb-4">About RINOR</h1>
+        <h1 className="text-4xl font-bold text-blue-900 mb-4">About Safarnama</h1>
         <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-          Your trusted partner for travel, tourism, and visa services in Pakistan.
+          Your trusted partner for travel, tourism, and Photography services in Pakistan.
         </p>
       </section>
 
