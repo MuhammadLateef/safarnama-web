@@ -1,15 +1,16 @@
 import { useState } from "react"
 import { useParams, useNavigate, Link } from "react-router-dom"
-import { FaCalendarAlt, FaPhone, FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaCalendarAlt, FaPhone, FaWhatsapp, FaFacebook, FaInstagram, FaYoutube  } from "react-icons/fa"
 import { LuArrowLeft } from "react-icons/lu"
-import { tourPackages, companyInfo } from "../../assets/data/Skardu_data_tour"
+import { tourPackages, companyInfo, tourHanimoon, tourFamily, tourAdventure } from "../../assets/data/Skardu_data_tour"
 import TourGrid from "../../components/Skardu_grid"
 function TourDetailPage() {
   const { id } = useParams()
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState("Overview")
 
-  const tour = tourPackages.find((tour) => tour.id === id)
+  const allTours = [...tourPackages, ...tourHanimoon, ...tourFamily, ...tourAdventure];
+  const tour = allTours.find(t => t.id === id);
 
   if (!tour) {
     return (
@@ -36,7 +37,7 @@ function TourDetailPage() {
   return (
     <div className="w-full bg-white">
       {/* Hero Section */}
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[550px] -mt-32">
         <img
           src={tour.imageUrl || "/placeholder.svg?height=400&width=1000"}
           alt={tour.title}
@@ -57,7 +58,7 @@ function TourDetailPage() {
         <div className="w-full lg:w-2/3 space-y-8">
           {/* Back Button */}
           <Link
-            to="/"
+            to="/tourism"
             className="inline-flex items-center gap-2 border border-gray-300 bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-all"
           >
             <LuArrowLeft className="transition-transform duration-300 group-hover:-translate-x-1" />
@@ -69,8 +70,8 @@ function TourDetailPage() {
               <button
                 key={tab}
                 className={`px-6 py-3 text-sm font-semibold transition-colors ${activeTab === tab
-                    ? "text-blue-600 border-b-2 border-blue-600"
-                    : "hover:text-blue-500"
+                  ? "text-blue-600 border-b-2 border-blue-600"
+                  : "hover:text-blue-500"
                   }`}
                 onClick={() => setActiveTab(tab)}
               >
@@ -187,7 +188,16 @@ function TourDetailPage() {
           </div>
 
           {/* Book Button */}
-          <button className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition-all">
+          <button
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition-all"
+            onClick={() => {
+              const phoneNumber = tourDetails.phone || companyInfo.phone; // Must be in international format without + (e.g., "923001234567")
+              const message = `Hello! I found your tour package on your website.\n\nPackage: ${tour.title}\nPrice: ${tour.price} per person\nDuration: ${tour.duration}\n\nPlease provide me with all further details.`;
+              const encodedMessage = encodeURIComponent(message);
+              const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+              window.open(whatsappLink, '_blank');
+            }}
+          >
             <FaWhatsapp className="text-xl" /> Book via WhatsApp
           </button>
 
@@ -210,9 +220,15 @@ function TourDetailPage() {
           <div className="text-center space-y-4">
             <p className="text-gray-500">Follow us for updates</p>
             <div className="flex justify-center gap-4 text-2xl text-blue-600">
-              <FaFacebook className="hover:text-blue-500 cursor-pointer" />
-              <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-              <FaLinkedin className="hover:text-blue-500 cursor-pointer" />
+              <a target="_blank" href="https://www.facebook.com/share/12JSSLg8pjQ/?mibextid=wwXIfr">
+                <FaFacebook className="hover:text-blue-500 cursor-pointer" />
+              </a>
+              <a href="https://www.instagram.com/emran_safarnama?igsh=dDl4NXkzejlleTNv" target="_blank">
+                <FaInstagram className="hover:text-pink-500 cursor-pointer" />
+              </a>
+              <a href="https://www.youtube.com/@emransafarnama" target="_blank">
+                <FaYoutube  className="hover:text-blue-500 cursor-pointer" />
+              </a>
             </div>
           </div>
 
@@ -236,9 +252,7 @@ function TourDetailPage() {
           </div>
         </aside>
       </div>
-      <div className=" max-w-[90%] mx-auto container py-10">
-        <TourGrid tours={tourPackages} />
-      </div>
+     
     </div>
   )
 }

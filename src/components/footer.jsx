@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="bg-purple-100">
-      
+
       <footer className="mx-auto max-w-[90%] py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -43,34 +43,34 @@ export default function Footer() {
                 </a>
               </div>
 
-           
+
             </div>
 
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/" className=" ">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="#destinations" className=" ">
-                    Destinations
+                  <Link href="/photography" className=" ">
+                    Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="#seasons" className=" ">
+                  <Link href="#" className=" ">
                     Seasons
                   </Link>
                 </li>
                 <li>
-                  <Link href="#testimonials" className=" ">
+                  <Link href="#" className=" ">
                     Stories
                   </Link>
                 </li>
                 <li>
-                  <Link href="#booking" className=" ">
+                  <Link href="/tourism" className=" ">
                     Book Now
                   </Link>
                 </li>
@@ -80,7 +80,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/about" className=" ">
                     About Us
                   </Link>
                 </li>
@@ -91,32 +91,32 @@ export default function Footer() {
               <h3 className="font-bold text-lg mb-4">Popular Tours</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/explore-pakistan" className=" ">
                     Hunza Valley Explorer
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/explore-pakistan" className=" ">
                     Skardu & Deosai Adventure
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/explore-pakistan" className=" ">
                     Fairy Meadows Trek
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/explore-pakistan" className=" ">
                     K2 Base Camp Expedition
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/explore-pakistan" className=" ">
                     Khaplu Valley Cultural Tour
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link href="/explore-pakistan" className=" ">
                     Northern Pakistan Grand Tour
                   </Link>
                 </li>
@@ -141,7 +141,7 @@ export default function Footer() {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  <span className="">+92 345 1234567</span>
+                  <span className="">+92 3554713444</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg
@@ -177,7 +177,8 @@ export default function Footer() {
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
-                  <span className="">123 Main Street, Gilgit City, Gilgit-Baltistan, Pakistan</span>
+                  <span className="">SAFARNAMA TOURS SMC PVT LTD, safarnama tours, airport road skardu, airport Rd, Skardu, Gilgit Baltistan
+                    </span>
                 </li>
               </ul>
             </div>

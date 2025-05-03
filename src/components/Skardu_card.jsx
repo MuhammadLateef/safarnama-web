@@ -30,7 +30,7 @@ export default function TourCard({ tour }) {
 
             {/* Tour Info */}
             <div
-                className={`absolute bottom-10 left-0 px-4 w-full text-white z-10 transition-all duration-300 ${isHovered ? "translate-y-[-60px]" : "translate-y-0"
+                className={`absolute bottom-10  text-start px-4 w-full text-white z-10 transition-all duration-300 ${isHovered ? "translate-y-[-60px]" : "translate-y-0"
                     }`}
             >
                 <p className=" text-xs font-medium mb-1">

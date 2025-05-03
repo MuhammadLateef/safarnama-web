@@ -119,14 +119,14 @@ import Nagar from "../assets/nagar/hoparglacier1.jpg";
 import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
 import Astore from "../assets/astore/rama-lake2.jpg";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
-
+import {destinationData} from "./destination-details-page";
 const Destination = () => {
   const destinations = [
-    { title: "Hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts.", image: Hunza, slug: "hunza" },
-    { title: "Nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture.", image: Nagar, slug: "nagar" },
-    { title: "Gilgit", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities.", image: Gilgit, slug: "gilgit" },
-    { title: "Astore", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park.", image: Astore, slug: "astore" },
-    { title: "Skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2.", image: Skardu, slug: "skardu" },
+    { title: "Hunza Valley", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts.", image: Hunza, slug: "hunza" },
+    { title: "Rakaposhi Nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture.", image: Nagar, slug: "nagar" },
+    { title: "Gilgit City", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities.", image: Gilgit, slug: "gilgit" },
+    { title: "Astore Valley", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park.", image: Astore, slug: "astore" },
+    { title: "Skardu valley", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2.", image: Skardu, slug: "skardu" },
     { title: "Deosai National Park", description: "One of the world's highest plateaus, known as 'The Land of Giants' with unique flora and fauna.", image: Deosai, slug: "deosai-national-park" }
   ];
 

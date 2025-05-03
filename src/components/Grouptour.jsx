@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-
+import { tourAdventure } from "../assets/data/Skardu_data_tour";
 const Grouptour = () => {
   const data = [
     {
@@ -61,9 +61,9 @@ const Grouptour = () => {
           modules={[Pagination]}
           className="px-6"
         >
-          {data.map((destination, index) => (
+          {tourAdventure.map((destination, index) => (
             <SwiperSlide key={index} className="pb-12">
-              <HoverCard destination={destination} />
+              <HoverCard  key={index} destination={destination} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -78,14 +78,14 @@ const HoverCard = ({ destination }) => {
 
   return (
     <div
-      className="relative h-80 rounded-lg overflow-hidden shadow-lg group"
+      className="relative h-80 rounded-sm overflow-hidden shadow-ld group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Background Image */}
       <div className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105">
         <img
-          src={destination.image || "/placeholder.svg"}
+          src={destination.imageUrl || "/placeholder.svg"}
           alt={destination.title}
           className="w-full h-full object-cover"
         />
@@ -107,7 +107,7 @@ const HoverCard = ({ destination }) => {
         }`}
       >
         <p className="text-xs font-medium mb-1">
-          {destination.duration} • Start From {destination.cost}
+          {destination.duration} • Start From {destination.price}
         </p>
         <h3 className="text-md font-bold">{destination.subTitle}</h3>
       </div>
@@ -128,7 +128,7 @@ const HoverCard = ({ destination }) => {
         }`}
       >
         <Link
-          to="#"
+          to={`/tour/${destination.id}`}
           className="bg-[#337ab7] hover:bg-blue-500 text-white text-sm font-normal py-1 px-3 transition-colors"
         >
           Book Now

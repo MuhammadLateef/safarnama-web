@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import heroImage from "../assets/Gilgit.jpg";
+import heroImage from "../assets/main-image1.png";
 import Hunza from "../assets/hunza/altitfort.jpg";
 import Nagar from "../assets/nagar/hoparglacier1.jpg";
 import Skardu from "../assets/top_destinations/skardu.JPG";
@@ -41,7 +41,7 @@ export default function ExplorePakistan() {
             alt="Hero"
             className="w-full h-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md" />
+          <div className="absolute inset-0 bg-black bg-opacity-5 rounded-md" />
         </div>
         <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center text-center gap-4 z-10 px-4 md:px-10">
           <div className="text-white">

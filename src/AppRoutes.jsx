@@ -17,6 +17,7 @@ import WeddingPage from "./pages/Wedding-shoots/WeddingPage";
 import DronePage from "./pages/Drone-shoots/DronePage";
 import DestinationDetail from "./layout/destination-details-page";
 import ScrollHandler from "./components/ScrollHandler";
+import RidePage from "./pages/ride-page/ride-page";
 
 const AppRoutes = () => {
   return (
@@ -33,6 +34,7 @@ const AppRoutes = () => {
         <Route path="/hotels/:name" element={<HotelDetailPage />} />
         <Route path="/photography" element={<Photography/>} />
         <Route path="/transportation" element={<Transportation/>} />
+        <Route path="/ride-page" element={<RidePage />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/destinations/:slug" element={<DestinationDetail/>} />    
         <Route path="/tourism" element={<Skardu_details />} />

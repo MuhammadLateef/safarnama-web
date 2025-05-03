@@ -332,7 +332,7 @@ export default function Navbar() {
       // ]
     },
     { name: "Explore Gilgit Baltistan", path: "/explore-pakistan" },
-    { name: "Transport", path: "/transportation" },
+    { name: "Transport", path: "/ride-page" },
     { 
       name: "Photography Service", 
       path: "/photography",

@@ -30,7 +30,8 @@ import Ghanche from "../assets/ghanche/chaqchan-mosque.jpg";
 import Ghanche2 from "../assets/ghanche/hushe-valley.jpg";
 import Ghanche3 from "../assets/ghanche/khaplu-fort.jpg";
 import Ghanche4 from "../assets/ghanche/machulu-valley.jpg";
-import Ghanche5 from "../assets/ghanche/thalle-valley.jpg";
+import Ghanche5 from "../assets/ghanche/khaplu6.png";
+import Ghanche6 from "../assets/ghanche/khaplu7.png";
 import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
 import khaplu2 from "../assets/ghanche/khaplu2.jpeg";
 import khaplu3 from "../assets/ghanche/khaplu3.jpeg";
@@ -45,8 +46,8 @@ import Shigar2 from "../assets/shigar/askole-village.jpg";
 import Shigar3 from "../assets/shigar/Amburiq_Mosque.jpg";
 import Shigar4 from "../assets/shigar/amburiq-mosque.webp";
 import Shigar5 from "../assets/shigar/Baltoro-Glacier.jpg";
-import kharmang from "../assets/kharmang/kharmang-district.jpg";
-import kharmang2 from "../assets/kharmang/Manthokha-waterfall.jpg";
+import kharmang from "../assets/kharmang/Manthokha-waterfall.jpg";
+import kharmang2 from "../assets/kharmang/kharmang-district.jpg";
 import kharmang3 from "../assets/kharmang/Khamosh-Waterfall.jpg";
 import kharmang4 from "../assets/kharmang/chocolate-rock.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
@@ -64,7 +65,7 @@ import {
     BilamikValley7,
 } from "../Index"
 // You would typically fetch this data from an API
-const destinationData = {
+export const destinationData = {
     hunza: {
         title: "Hunza Valley",
         mainImage: Hunza,
@@ -187,8 +188,8 @@ const destinationData = {
     },
     ghanche: {
         title: "Ghanche District",
-        mainImage: Ghanche, // Using placeholder image, replace with actual Ghanche image
-        images: [khaplu1, khaplu2, khaplu3, khaplu4, Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
+        mainImage: Ghanche6, // Using placeholder image, replace with actual Ghanche image
+        images: [Ghanche6,khaplu1, khaplu2, khaplu3, khaplu4, Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
         history: `Ghanche is the easternmost district of Gilgit-Baltistan, Pakistan, bordering India.
              It was established as a district in 1977 and includes the historic Baltistan region.
              The name "Ghanche" comes from the Balti language, meaning "glacier," reflecting the 
@@ -249,7 +250,7 @@ const destinationData = {
     },
 
     kharmang: {
-        title: "Kharmang District",
+        title: "Manthoka waterfall",
         mainImage: kharmang, // Using placeholder image, replace with actual Kharmang image
         images: [kharmang, kharmang2, kharmang3, kharmang4], // Add actual images when available
         history: `Kharmang district, located along the Line of Control with India, was established
@@ -257,6 +258,8 @@ const destinationData = {
              has archaeological sites showing Buddhist influence before the region converted to Islam
              in the 14th century.`,
         attractions: [
+            "Manthoka Waterfall",
+            "Khamosh Waterfall",
             "Mehdiabad - Administrative center with beautiful surroundings",
             "Olding Village - Known for traditional architecture and lifestyle",
             "Kharmang River Valley - Offering beautiful landscapes and hiking opportunities",

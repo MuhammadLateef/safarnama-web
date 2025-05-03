@@ -22,7 +22,7 @@
 //       cost: "15,500",
 //       duration: "10 Days 9 Nights",
 //     },
-   
+
 //     {
 //       image: Destination3,
 //       title: "Skardu + Hunza",
@@ -109,7 +109,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-
+import { tourHanimoon } from "../assets/data/Skardu_data_tour";
 export default function HoneyMoon() {
   const data = [
     {
@@ -147,7 +147,7 @@ export default function HoneyMoon() {
       cost: "00",
       duration: "4 Days 5 Nights",
     },
-   
+
   ];
 
   return (
@@ -166,9 +166,9 @@ export default function HoneyMoon() {
         modules={[Pagination]}
         className="px-6"
       >
-        {data.map((destination, index) => (
+        {tourHanimoon.map((destination, index) => (
           <SwiperSlide key={index} className="pb-12">
-            <HoverCard destination={destination} />
+            <HoverCard key={index.id} destination={destination} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -189,23 +189,21 @@ const HoverCard = ({ destination }) => {
       {/* Background Image */}
       <div className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105">
         <img
-          src={destination.image}
+          src={destination.imageUrl}
           alt={destination.title}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div
-          className={`absolute inset-0 bg-black/40 transition-all duration-150 ease-in-out transform ${
-            isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-          }`}
+          className={`absolute inset-0 bg-black/40 transition-all duration-150 ease-in-out transform ${isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+            }`}
         />
       </div>
 
       {/* Tour Info */}
       <div
-        className={`absolute bottom-10 left-0 px-4 w-full text-white z-10 transition-all duration-300 ${
-          isHovered ? "translate-y-[-60px]" : "translate-y-0"
-        }`}
+        className={`absolute bottom-10 left-0 px-4 w-full text-white z-10 transition-all duration-300 ${isHovered ? "translate-y-[-60px]" : "translate-y-0"
+          }`}
       >
         <p className="text-xs font-medium mb-1">
           {destination.duration} • Start From {destination.cost}
@@ -215,21 +213,19 @@ const HoverCard = ({ destination }) => {
 
       {/* Icons */}
       <div
-        className={`absolute bottom-16 left-3 z-10 flex space-x-2 transition-opacity duration-300 ${
-          isHovered ? "opacity-100" : "opacity-0"
-        }`}
+        className={`absolute bottom-16 left-3 z-10 flex space-x-2 transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"
+          }`}
       >
-       
+
       </div>
 
       {/* Book Now Button */}
       <div
-        className={`absolute left-3 bottom-3 w-full flex z-10 transition-all duration-300 ${
-          isHovered ? "opacity-100 translate-y-[-40px]" : "opacity-0 translate-y-0"
-        }`}
+        className={`absolute left-3 bottom-3 w-full flex z-10 transition-all duration-300 ${isHovered ? "opacity-100 translate-y-[-40px]" : "opacity-0 translate-y-0"
+          }`}
       >
         <Link
-          to="#"
+          to={`/tour/${destination.id}`}
           className="bg-[#337ab7] hover:bg-blue-500 text-white text-sm font-normal py-1 px-3 transition-colors"
         >
           Book Now
