@@ -6,13 +6,13 @@ import BashoImage5 from "./assets/skardu/basho-meadows-camping5.JPG";
 import BashoImage6 from "./assets/skardu/basho-meadows-camping6.JPG";
 import BashoImage7 from "./assets/skardu/basho-meadows-camping7.JPG";
 import BashoImage8 from "./assets/skardu/basho-meadows-camping8.JPG";
-import BilamikValley1 from "./assets/roundu/bilamik-valley1.jpg";
+import BilamikValley1 from "./assets/roundu/bilamik-valley1.JPG";
 import BilamikValley2 from "./assets/roundu/bilamik-valley2.png";
-import BilamikValley3 from "./assets/roundu/bilamik-valley3.jpg";
+import BilamikValley3 from "./assets/roundu/bilamik-valley3.JPG";
 import BilamikValley4 from "./assets/roundu/bilamik-valley4.png";
-import BilamikValley5 from "./assets/roundu/bilamik-valley5.jpg";
-import BilamikValley6 from "./assets/roundu/bilamik-valley6.jpg";
-import BilamikValley7 from "./assets/roundu/bilamik-valley7.jpg";
+import BilamikValley5 from "./assets/roundu/bilamik-valley5.JPG";
+import BilamikValley6 from "./assets/roundu/bilamik-valley6.JPG";
+import BilamikValley7 from "./assets/roundu/bilamik-valley7.JPG";
 
 import mainImage1 from "./assets/main-image1.png"
 import mainImage2 from "./assets/main-image2.png"
