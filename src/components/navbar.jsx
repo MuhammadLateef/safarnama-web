@@ -337,8 +337,8 @@ export default function Navbar() {
       name: "Photography Service", 
       path: "/photography",
       dropdown: [
-        { name: "Wedding Shoots", path: "/wedding-shoots" },
-        { name: "Drone Shoots", path: "/drone-shoots" }
+        { name: "Wedding Shots", path: "/wedding-shots" },
+        { name: "Drone Shots", path: "/drone-shots" }
       ]
     },
 

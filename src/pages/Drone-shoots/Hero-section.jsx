@@ -9,7 +9,7 @@ function HeroSection() {
         >
             <div className="absolute inset-0 bg-black opacity-70"></div>
             <div className="container mx-auto px-4 text-white text-center relative z-10">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">DRONE VIDEO PRODUCTION COMPANY </h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">Drone shot at Deosai National Park, Skardu Valley. </h1>
                 <p className="text-xl max-w-2xl mx-auto">
                     Best Drone Photography & Videography Services in Gilgit Baltistan – Aerial Shots for Events, Tours & Real Estate
                 </p>

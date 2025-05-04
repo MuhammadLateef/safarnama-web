@@ -27,7 +27,19 @@ function ContactForm({ onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    const { name, phone, email, videoType, message } = formData;
+
+    const whatsappMessage =
+      `*Name:* ${name}%0A` +
+      `*Phone:* ${phone}%0A` +
+      `*Email:* ${email}%0A` +
+      `*Subject:* ${videoType}%0A` +
+      `*Message:* ${message}` +
+      `_(This message was sent from your website's Wedding Service form. Please provide more information!)_`;
+
+    const whatsappUrl = `https://wa.me/923554713444?text=${encodeURI(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank').focus();
     onClose();
   };
 

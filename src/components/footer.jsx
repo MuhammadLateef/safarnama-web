@@ -50,37 +50,37 @@ export default function Footer() {
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className=" ">
+                  <Link to="/" className=" ">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/photography" className=" ">
+                  <Link to="/photography" className=" ">
                     Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link to="#" className=" ">
                     Seasons
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link to="#" className=" ">
                     Stories
                   </Link>
                 </li>
                 <li>
-                  <Link href="/tourism" className=" ">
+                  <Link to="/tourism" className=" ">
                     Book Now
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" ">
+                  <Link to="#" className=" ">
                     Travel Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className=" ">
+                  <Link to="/about" className=" ">
                     About Us
                   </Link>
                 </li>
@@ -91,32 +91,32 @@ export default function Footer() {
               <h3 className="font-bold text-lg mb-4">Popular Tours</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/explore-pakistan" className=" ">
+                  <Link to="/explore-pakistan" className=" ">
                     Hunza Valley Explorer
                   </Link>
                 </li>
                 <li>
-                  <Link href="/explore-pakistan" className=" ">
+                  <Link to="/explore-pakistan" className=" ">
                     Skardu & Deosai Adventure
                   </Link>
                 </li>
                 <li>
-                  <Link href="/explore-pakistan" className=" ">
+                  <Link to="/explore-pakistan" className=" ">
                     Fairy Meadows Trek
                   </Link>
                 </li>
                 <li>
-                  <Link href="/explore-pakistan" className=" ">
+                  <Link to="/explore-pakistan" className=" ">
                     K2 Base Camp Expedition
                   </Link>
                 </li>
                 <li>
-                  <Link href="/explore-pakistan" className=" ">
+                  <Link to="/explore-pakistan" className=" ">
                     Khaplu Valley Cultural Tour
                   </Link>
                 </li>
                 <li>
-                  <Link href="/explore-pakistan" className=" ">
+                  <Link to="/explore-pakistan" className=" ">
                     Northern Pakistan Grand Tour
                   </Link>
                 </li>

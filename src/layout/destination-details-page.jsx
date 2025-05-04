@@ -1,31 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Hunza from "../assets/hunza/altitfort.jpg";
-import Hunza1 from "../assets/hunza/altitfort2.jpg";
-import Hunza2 from "../assets/hunza/attabadlake.jpg";
-import Hunza3 from "../assets/hunza/baltitfort2.jpg";
-import Hunza4 from "../assets/hunza/hussainibridge2.jpg";
+import Hunza2 from "../assets/hunza/passuglacier.jpg";
+import Hunza3 from "../assets/hunza/hunzaboritelake.jpg";
 import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
 import Nagar2 from "../assets/nagar/rushLake1.jpg";
-import Nagar3 from "../assets/nagar/nagar-vallay1.jpg";
-import Skardu from "../assets/top_destinations/kharpoch1.jpg";
-import Skardu2 from "../assets/top_destinations/IMG_4667.JPG";
-import Skardu3 from "../assets/top_destinations/IMG_4680.JPG";
-import Skardu4 from "../assets/top_destinations/IMG_4594.JPG";
-import Skardu5 from "../assets/top_destinations/IMG_4596.JPG";
-import Skardu6 from "../assets/top_destinations/IMG_4655.JPG";
-import Skardu7 from "../assets/top_destinations/IMG_4654.JPG";
-import Skardu8 from "../assets/top_destinations/IMG_4678.JPG";
 import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
-import Gilgit2 from "../assets/gilgit/gilgit-bazar.jpg";
-import Gilgit3 from "../assets/gilgit/bagrote-valley.jpg";
-import Gilgit4 from "../assets/gilgit/haramush-valley1.jpg";
 import Gilgit5 from "../assets/gilgit/kargah-buddha.webp";
 import Astore from "../assets/astore/rama-lake.jpg";
 import Astore2 from "../assets/astore/astore-river.jpg";
-import Astore3 from "../assets/astore/chilam.jpg";
-import Astore4 from "../assets/astore/rama-meadows1.jpg";
 import Ghanche from "../assets/ghanche/chaqchan-mosque.jpg";
 import Ghanche2 from "../assets/ghanche/hushe-valley.jpg";
 import Ghanche3 from "../assets/ghanche/khaplu-fort.jpg";
@@ -36,27 +20,23 @@ import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
 import khaplu2 from "../assets/ghanche/khaplu2.jpeg";
 import khaplu3 from "../assets/ghanche/khaplu3.jpeg";
 import khaplu4 from "../assets/ghanche/khaplu4.jpeg";
-import Ghizer from "../assets/ghizer/gupis_fort.jpg";
-import Ghizer2 from "../assets/ghizer/lalak-jan.jpg";
-import Ghizer3 from "../assets/ghizer/Yasin-valley.jpg";
 import Ghizer4 from "../assets/ghizer/phander-valley.jpg";
 import Ghizer5 from "../assets/ghizer/phander-lake.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
 import Shigar2 from "../assets/shigar/askole-village.jpg";
-import Shigar3 from "../assets/shigar/Amburiq_Mosque.jpg";
-import Shigar4 from "../assets/shigar/amburiq-mosque.webp";
 import Shigar5 from "../assets/shigar/Baltoro-Glacier.jpg";
 import kharmang from "../assets/kharmang/Manthokha-waterfall.jpg";
-import kharmang2 from "../assets/kharmang/kharmang-district.jpg";
+import kharmang2 from "../assets/kharmang/ghanduslake.jpg";
 import kharmang3 from "../assets/kharmang/Khamosh-Waterfall.jpg";
-import kharmang4 from "../assets/kharmang/chocolate-rock.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
 import Diamer2 from "../assets/diamer/fairy-meadows2.jpg";
-import Roundu from "../assets/roundu/tormik-valley.jpg"
-import Roundu2 from "../assets/roundu/tormik-valley2.jpg"
-import Deosai from "../assets/top_destinations/IMG_4665.JPG";
+import Roundu from "../assets/roundu/tormik-valley.png"
+import Deosai1 from "../assets/deosai/deosai1.png";
+import Deosai2 from "../assets/deosai/deosai2.png";
+import Deosai3 from "../assets/deosai/deosai3.png";
+
 import {
-    BashoImage1, BashoImage2, BashoImage3, BashoImage4, BashoImage5, BilamikValley1,
+    BashoImage3, BashoImage4, BashoImage5, BilamikValley1,
     BilamikValley2,
     BilamikValley3,
     BilamikValley4,
@@ -69,7 +49,7 @@ export const destinationData = {
     hunza: {
         title: "Hunza Valley",
         mainImage: Hunza,
-        images: [Hunza, Hunza1, Hunza2, Hunza3, Hunza4], // Add more images as needed
+        images: [Hunza3, Hunza2], // Add more images as needed
         history: `Hunza Valley is a mountainous valley in the Gilgit-Baltistan region of Pakistan. 
               The Hunza valley is situated at an elevation of 2,438 meters. 
               The territory of Hunza was an independent principality for centuries, ruled by the Mirs of Hunza.
@@ -101,7 +81,7 @@ export const destinationData = {
     nagar: {
         title: "Nagar Valley",
         mainImage: Nagar,
-        images: [Nagar, Nagar1, Nagar2, Nagar3],
+        images: [Nagar1, Nagar2],
         history: `Nagar Valley, located in Gilgit-Baltistan, was formerly a princely state that existed until 1974.
              It shares its borders with the Hunza Valley and was historically its rival. The valley has a rich
              history of local rule under the Mirs of Nagar before coming under British influence in the late 19th century.`,
@@ -119,7 +99,7 @@ export const destinationData = {
     gilgit: {
         title: "Gilgit City",
         mainImage: Gilgit,
-        images: [Gilgit, Gilgit2, Gilgit3, Gilgit4, Gilgit5],
+        images: [Gilgit, Gilgit5],
         history: `Gilgit is the capital city of Gilgit-Baltistan region and has served as an important trade center
              along the ancient Silk Road. The city has a strategic location at the confluence of the Gilgit
              and Hunza rivers, making it historically significant for trade and cultural exchange.`,
@@ -138,7 +118,7 @@ export const destinationData = {
     skardu: {
         title: "Skardu Valley",
         mainImage: BashoImage5,
-        images: [BashoImage1, BashoImage2, BashoImage3, BashoImage4, BashoImage5, Skardu2, Skardu3, Skardu4, Skardu5, Skardu6, Skardu7, Skardu8],
+        images: [BashoImage3, BashoImage4, BashoImage5],
         history: `Skardu is the capital of Baltistan division and was part of the ancient kingdom of Little Tibet.
              The valley has been an important center for Tibetan Buddhism and later Islamic culture. It served
              as a gateway to the high mountains of the Karakoram range.`,
@@ -154,7 +134,7 @@ export const destinationData = {
     astore: {
         title: "Astore Valley",
         mainImage: Astore,
-        images: [Astore, Astore2, Astore3, Astore4],
+        images: [Astore2],
         history: `Astore Valley is located in Gilgit-Baltistan and was historically part of the state of Kashmir.
              It served as an important route connecting Kashmir and Gilgit. The valley has witnessed various
              cultural influences throughout its history.`,
@@ -170,8 +150,8 @@ export const destinationData = {
     },
     "deosai-national-park": {
         title: "Deosai National Park",
-        mainImage: Deosai,
-        images: [Deosai, Skardu, Astore],
+        mainImage: Deosai1,
+        images: [Deosai1, Deosai2, Deosai3],
         history: `Deosai National Park, known as the "Land of Giants" in local folklore, is one of the highest
              plateaus in the world. The park was established in 1993 primarily to protect the endangered
              Himalayan brown bear. The plateau has remained relatively untouched by human influence due to
@@ -189,7 +169,7 @@ export const destinationData = {
     ghanche: {
         title: "Ghanche District",
         mainImage: Ghanche6, // Using placeholder image, replace with actual Ghanche image
-        images: [Ghanche6,khaplu1, khaplu2, khaplu3, khaplu4, Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
+        images: [Ghanche6, khaplu1, khaplu2, khaplu3, khaplu4, Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
         history: `Ghanche is the easternmost district of Gilgit-Baltistan, Pakistan, bordering India.
              It was established as a district in 1977 and includes the historic Baltistan region.
              The name "Ghanche" comes from the Balti language, meaning "glacier," reflecting the 
@@ -208,9 +188,9 @@ export const destinationData = {
     },
 
     ghizer: {
-        title: "Ghizer District",
-        mainImage: Ghizer, // Using placeholder image, replace with actual Ghizer image
-        images: [Ghizer, Ghizer2, Ghizer3, Ghizer4, Ghizer5], // Add actual images when available
+        title: "Phander Valley",
+        mainImage: Ghizer4, // Using placeholder image, replace with actual Ghizer image
+        images: [Ghizer4, Ghizer5], // Add actual images when available
         history: `Ghizer district, located in the western part of Gilgit-Baltistan, derives its name 
              from the Gupis-Yasin valley. It was established as a separate district in 1974.
              The district has served as an important trade route connecting Gilgit with Chitral
@@ -229,9 +209,9 @@ export const destinationData = {
     },
 
     shigar: {
-        title: "Shigar District",
-        mainImage: Shigar, // Using placeholder image, replace with actual Shigar image
-        images: [Shigar, Shigar2, Shigar3, Shigar4, Shigar5], // Add actual images when available
+        title: "Shigar Fort",
+        mainImage: Shigar,
+        images: [Shigar, Shigar2, Shigar5], // Add actual images when available
         history: `Shigar district was formerly a small kingdom ruled by the Amacha dynasty before
              becoming part of the state of Jammu and Kashmir. It became a separate district in 2015.
              The valley has been an important stopping point for mountaineers heading to the Karakoram
@@ -252,7 +232,7 @@ export const destinationData = {
     kharmang: {
         title: "Manthoka waterfall",
         mainImage: kharmang, // Using placeholder image, replace with actual Kharmang image
-        images: [kharmang, kharmang2, kharmang3, kharmang4], // Add actual images when available
+        images: [kharmang3, kharmang2], // Add actual images when available
         history: `Kharmang district, located along the Line of Control with India, was established
              as a separate district in 2015. Historically, it was part of the Baltistan region and
              has archaeological sites showing Buddhist influence before the region converted to Islam
@@ -273,15 +253,11 @@ export const destinationData = {
     },
 
     roundu: {
-        title: "Roundu District",
-        mainImage: BilamikValley3, 
+        title: "Tormik Valley",
+        mainImage: BilamikValley2,
         images: [BilamikValley1,
             BilamikValley2,
-            BilamikValley3,
-            BilamikValley4,
-            BilamikValley5,
-            BilamikValley6,
-            BilamikValley7, , Roundu, Roundu2, Nagar], // Add actual images when available
+            Roundu], // Add actual images when available
         history: `Roundu district, located along the banks of the Indus River, was established
              as a separate district in 2015. The area has historically been significant for its
              strategic location along ancient trade routes and has preserved many traditional

@@ -5,23 +5,23 @@ import Nagar from "../assets/nagar/hoparglacier1.jpg";
 import Skardu from "../assets/top_destinations/skardu.JPG";
 import Gilgit from "../assets/gilgit/gilgit-river2.jpg";
 import Astore from "../assets/astore/rama-lake2.jpg";
-import Ghizer from "../assets/ghizer/gupis_fort.jpg";
+import Ghizer from "../assets/ghizer/phander-valley.jpg";
 import Ghanche from "../assets/ghanche/khaplu-fort.jpg";
 import Kharmang from "../assets/kharmang/kharmang-district.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
-import Roundu from "../assets/ghizer/gupis_fort.jpg";
+import Roundu from "../assets/roundu/bilamik-valley1.jpg";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 const destinations = [
   { image: Hunza, title: "Hunza Valley", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
   { image: Nagar, title: "Rakaposhi Nagar", slug: "nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture." },
   { image: Gilgit, title: "Gilgit City", slug: "gilgit", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities." },
-  { image: Astore, title: "Astore", slug: "astore", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park." },
-  { image: Skardu, title: "Skardu", slug: "skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2." },
+  { image: Astore, title: "Astore Valley", slug: "astore", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park." },
+  { image: Skardu, title: "Skardu City", slug: "skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2." },
   { image: Deosai, title: "Deosai National Park", slug: "deosai-national-park", description: "One of the world's highest plateaus, known as 'The Land of Giants' with unique flora and fauna." },
   { image: Ghanche, title: "Khaplu Valley", slug: "ghanche", description: "The easternmost district of Pakistan, known for Khaplu Palace and major peaks like K7." },
-  { image: Ghizer, title: "Ghizer Valley", slug: "ghizer", description: "Known for Phander Lake, Shandur Pass, trout fishing, and diverse cultures." },
+  { image: Ghizer, title: "Phander Valley", slug: "ghizer", description: "Known for Phander Lake, Shandur Pass, trout fishing, and diverse cultures." },
   { image: Shigar, title: "Shigar Valley", slug: "shigar", description: "Famous for its valley, wooden mosques, and as the gateway to Baltoro glacier." },
   { image: Kharmang, title: "Manthokha Waterfall", slug: "kharmang", description: "This waterfall is approx 180 feet high from ground and located 60 km away from main Skradu town." },
   { image: Roundu, title: "Bilamik Valley", slug: "roundu", description: "Bilamik Valley, also known as Bilamik Roundu, lies in the Skardu District of Gilgit Baltistan" },
@@ -82,7 +82,7 @@ export default function ExplorePakistan() {
 
               {/* Text Content */}
               <div className="absolute bottom-4 left-4 right-4 z-10 text-white">
-                <h3 className="text-xl font-bold mb-2 transition-transform duration-300 group-hover:-translate-y-2">
+                <h3 className="text-xl font-bold mb-2 transition-transform duration-300 translate-y-0 group-hover:-translate-y-2">
                   {destination.title}
                 </h3>
 
