@@ -54,7 +54,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="bg-gray-50 py-16 px-4">
+      {/* <section className="bg-gray-50 py-16 px-4">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Meet Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {team.map((member, idx) => (
@@ -67,7 +67,7 @@ const AboutPage = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Core Values */}
       <section className="py-16 px-4 max-w-6xl mx-auto">
@@ -92,7 +92,7 @@ const AboutPage = () => {
           Contact us today to plan your next adventure or get expert help with your visa application.
         </p>
         <Link
-          href="/contact"
+          to="/contact"
           className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-transform transform hover:scale-105"
         >
           Contact Us Now

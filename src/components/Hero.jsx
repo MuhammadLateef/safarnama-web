@@ -1,10 +1,6 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import homeImage1 from "../assets/Gilgit.jpg";
-// import homeImage2 from "../assets/Hero2.png";
-// import homeImage3 from "../assets/Hero3.png";
-// import homeImage4 from "../assets/Hero4.jpg";
 import {
   mainImage1,
   mainImage2,

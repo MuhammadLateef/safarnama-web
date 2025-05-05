@@ -3,6 +3,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import AppRoutes from "./AppRoutes"; // Import AppRoutes
+import BookingPopup from "./components/BookingPopup";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <ScrollToTop />
         <Navbar />
         <AppRoutes /> {/* Using AppRoutes here */}
+        {/* <BookingPopup /> */}
         <Footer />
       </main>
     </Router>

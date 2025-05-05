@@ -18,11 +18,13 @@ import DronePage from "./pages/Drone-shoots/DronePage";
 import DestinationDetail from "./layout/destination-details-page";
 import ScrollHandler from "./components/ScrollHandler";
 import RidePage from "./pages/ride-page/ride-page";
+import BookingPopup from "./components/BookingPopup";
 
 const AppRoutes = () => {
   return (
     <>
       <ScrollHandler />
+      <BookingPopup />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -39,8 +41,8 @@ const AppRoutes = () => {
         <Route path="/destinations/:slug" element={<DestinationDetail/>} />    
         <Route path="/tourism" element={<Skardu_details />} />
         <Route path="/tour/:id" element={<TourDetailPage />} />
-        <Route path="/drone-shoots" element={<DronePage />} />
-        <Route path="/wedding-shoots" element={<WeddingPage />} />
+        <Route path="/drone-shots" element={<DronePage />} />
+        <Route path="/wedding-shots" element={<WeddingPage />} />
       </Routes>
     </>
   );

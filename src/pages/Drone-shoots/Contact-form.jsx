@@ -19,30 +19,37 @@ function ContactForm({ onClose }) {
   })
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData({
-      ...formData,
-      [name]: value,
-    })
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission logic here
-    console.log("Form submitted:", formData)
-    // You would typically send this data to your backend
+    const { name, phone, email, videoType, message } = formData;
 
-    // Close the form after submission
+    const whatsappMessage =
+      `*Name:* ${name}%0A` +
+      `*Phone:* ${phone}%0A` +
+      `*Email:* ${email}%0A` +
+      `*Subject:* ${videoType}%0A` +
+      `*Message:* ${message}` +
+      `_(This message was sent from your website's Drone Service form. Please provide more information!)_`;
+
+    const whatsappUrl = `https://wa.me/923554713444?text=${encodeURI(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank').focus();
     onClose()
   }
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
-      <div className="bg-black border border-gray-800 p-8 max-w-md w-full relative rounded-sm">
-        <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-white">
+      <div className="bg-white p-8 max-w-md w-full relative rounded-lg shadow-lg">
+        <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-500">
           CLOSE
         </button>
-
         <h2 className="text-3xl font-bold mb-6">Hire Us Now</h2>
 
         <form onSubmit={handleSubmit}>
@@ -54,7 +61,7 @@ function ContactForm({ onClose }) {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name *"
-                className="w-full p-3 rounded-sm bg-white text-black"
+                className="w-full p-3 rounded-sm bg-gray-100 text-black"
                 required
               />
             </div>
@@ -66,7 +73,7 @@ function ContactForm({ onClose }) {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="w-full p-3 rounded-sm bg-white text-black"
+                className="w-full p-3 rounded-sm bg-gray-100 text-black"
               />
             </div>
 
@@ -77,7 +84,7 @@ function ContactForm({ onClose }) {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email *"
-                className="w-full p-3 rounded-sm bg-white text-black"
+                className="w-full p-3 rounded-sm bg-gray-100 text-black"
                 required
               />
             </div>
@@ -87,7 +94,7 @@ function ContactForm({ onClose }) {
                 name="videoType"
                 value={formData.videoType}
                 onChange={handleChange}
-                className="w-full p-3 rounded-sm bg-white text-black appearance-none"
+                className="w-full p-3 rounded-sm bg-gray-100 text-black appearance-none"
               >
                 {videoOptions.map((option) => (
                   <option key={option} value={option}>
@@ -104,14 +111,14 @@ function ContactForm({ onClose }) {
                 onChange={handleChange}
                 placeholder="Message..."
                 rows={5}
-                className="w-full p-3 rounded-sm bg-white text-black"
+                className="w-full p-3 rounded-sm bg-gray-100 text-black"
               ></textarea>
             </div>
 
             <div>
               <button
                 type="submit"
-                className="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition duration-300 flex items-center"
+                className="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition duration-300 flex items-center justify-center w-full"
               >
                 Send Message
                 <svg

@@ -152,8 +152,8 @@ export const tourPackages = [{
     },
     {
         id: "2",
-        title: "Hot Selling Skardu By Road Trip",
-        duration: "7 Days & 6 Nights, Deluxe Package Price",
+        title: "Deluxe Package Skardu",
+        duration: "7 Days & 6 Nights, ",
         price: "295,000pkr",
         imageUrl: image2,
         // Add details for tour 2
@@ -231,8 +231,8 @@ export const tourPackages = [{
     },
     {
         id: "3",
-        title: "Hot Selling Skardu By Road Trip",
-        duration: "7 Days, 6 Nights Executive Package Price",
+        title: "Executive Package Price",
+        duration: "7 Days, 6 Nights ",
         price: "588,000pkr",
         imageUrl: image3,
         // Add details for tour 2
@@ -508,149 +508,6 @@ export const tourPackages = [{
             phone: "9203554713444",
         },
     },
-    {
-        id: "7",
-        title: "Hot Selling Skardu By Road Trip",
-        duration: "7 Days, 6 Nights",
-        price: "PKR0",
-        imageUrl: image7,
-        // Add details for tour 2
-        details: {
-            overview: {
-                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
-            },
-            itinerary: [{
-                    day: 1,
-                    title: "Islamabad to Chilas",
-                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
-                },
-                {
-                    day: 2,
-                    title: "Chilas to Skardu",
-                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
-                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
-                },
-                // Add more days as needed
-            ],
-            inclusions: [
-                { text: "Hotel Accommodation", type: "major" },
-                { text: "Transportation in comfortable vehicles", type: "major" },
-                { text: "Breakfast and Dinner", type: "major" },
-                { text: "English Speaking Guide", type: "major" },
-                { text: "All Taxes and Service Charges", type: "major" },
-            ],
-            exclusions: [
-                { text: "Lunch" },
-                { text: "Personal Expenses" },
-                { text: "Optional Activities" },
-                { text: "Travel Insurance" },
-            ],
-            gallery: [image2, image3, image4, image5, image6, image7],
-            companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
-                address: "safarnama tours, airport road skardu",
-                street: "airport Rd, Skardu",
-                location: "Gilgit Baltistan",
-            },
-            phone: "9203554713444",
-        },
-    },
-    {
-        id: "8",
-        title: "Hot Selling Skardu By Road Trip",
-        duration: "7 Days, 6 Nights",
-        price: "PKR0",
-        imageUrl: image8,
-        // Add details for tour 2
-        details: {
-            overview: {
-                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
-            },
-            itinerary: [{
-                    day: 1,
-                    title: "Islamabad to Chilas",
-                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
-                },
-                {
-                    day: 2,
-                    title: "Chilas to Skardu",
-                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
-                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
-                },
-                // Add more days as needed
-            ],
-            inclusions: [
-                { text: "Hotel Accommodation", type: "major" },
-                { text: "Transportation in comfortable vehicles", type: "major" },
-                { text: "Breakfast and Dinner", type: "major" },
-                { text: "English Speaking Guide", type: "major" },
-                { text: "All Taxes and Service Charges", type: "major" },
-            ],
-            exclusions: [
-                { text: "Lunch" },
-                { text: "Personal Expenses" },
-                { text: "Optional Activities" },
-                { text: "Travel Insurance" },
-            ],
-            gallery: [image2, image3, image4, image5, image6, image7],
-            companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
-                address: "safarnama tours, airport road skardu",
-                street: "airport Rd, Skardu",
-                location: "Gilgit Baltistan",
-            },
-            phone: "9203554713444",
-        },
-    },
-    {
-        id: "9",
-        title: "Hot Selling Skardu By Road Trip",
-        duration: "7 Days, 6 Nights",
-        price: "PKR0",
-        imageUrl: image9,
-        // Add details for tour 2
-        details: {
-            overview: {
-                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
-            },
-            itinerary: [{
-                    day: 1,
-                    title: "Islamabad to Chilas",
-                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
-                },
-                {
-                    day: 2,
-                    title: "Chilas to Skardu",
-                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
-                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
-                },
-                // Add more days as needed
-            ],
-            inclusions: [
-                { text: "Hotel Accommodation", type: "major" },
-                { text: "Transportation in comfortable vehicles", type: "major" },
-                { text: "Breakfast and Dinner", type: "major" },
-                { text: "English Speaking Guide", type: "major" },
-                { text: "All Taxes and Service Charges", type: "major" },
-            ],
-            exclusions: [
-                { text: "Lunch" },
-                { text: "Personal Expenses" },
-                { text: "Optional Activities" },
-                { text: "Travel Insurance" },
-            ],
-            gallery: [image2, image3, image4, image5, image6, image7],
-            companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
-                address: "safarnama tours, airport road skardu",
-                street: "airport Rd, Skardu",
-                location: "Gilgit Baltistan",
-            },
-            phone: "9203554713444",
-        },
-
-    },
-
 ]
 
 // Default company information that can be used across all tours
@@ -666,7 +523,7 @@ export const tourHanimoon = [{
         id: "hunza-valley-1",
         imageUrl: image13,
         title: "Hunza",
-        subTitle: "4 Days Honeymoon to Hunza - By Air",
+        subTitle: "4 Days Honeymoon to Hunza",
         price: "00",
         duration: "4 Days 5 Nights",
         details: {
@@ -714,7 +571,7 @@ export const tourHanimoon = [{
         id: "hunza-valley-2",
         imageUrl: Destination1,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "10 Days Honeymoon To Skardu and Hunza",
         price: "00",
         duration: "10 Days 9 Nights",
         details: {
@@ -761,7 +618,7 @@ export const tourHanimoon = [{
         id: "hunza-valley-3",
         imageUrl: Destination2,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "7 Days Honeymoon To Skardu ",
         price: "00",
         duration: "10 Days 9 Nights",
         details: {
@@ -808,7 +665,7 @@ export const tourHanimoon = [{
         id: "hunza-valley-4",
         imageUrl: Destination4,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "5 Days Honeymoon To Skardu and Hunza ",
         price: "00",
         duration: "10 Days 9 Nights",
         details: {
@@ -858,7 +715,7 @@ export const tourFamily = [{
         id: "family-tour-1",
         imageUrl: familyDestination1,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "10 Days Family tour To Skardu",
         price: "00",
         duration: "10 Days 9 Nights",
         details: {
@@ -906,9 +763,9 @@ export const tourFamily = [{
         id: "family-tour-2",
         imageUrl: familyDestination2,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "7 Days family To Skardu and Hunza",
         price: "00",
-        duration: "10 Days 9 Nights",
+        duration: "7 Days 6 Nights",
         details: {
             overview: {
                 description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
@@ -953,9 +810,9 @@ export const tourFamily = [{
         id: "family-tour-3",
         imageUrl: familyDestination3,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "6 Days family To Skardu and Hunza",
         price: "00",
-        duration: "10 Days 9 Nights",
+        duration: "6 Days 5 Nights",
         details: {
             overview: {
                 description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
@@ -1002,12 +859,12 @@ export const tourAdventure = [{
         id: "adcenture-tour-1",
         imageUrl: AdventureDestination1,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "10 Days group tour To Skardu and Hunza",
         price: "00",
         duration: "10 Days 9 Nights",
         details: {
             overview: {
-                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
+                description: "A 10-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
             },
             itinerary: [{
                     day: 1,
@@ -1049,9 +906,9 @@ export const tourAdventure = [{
         id: "adcenture-tour-2",
         imageUrl: AdventureDestination2,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "7 Days group tour To Skardu and Hunza",
         price: "00",
-        duration: "10 Days 9 Nights",
+        duration: "7 Days 6 Nights",
         details: {
             overview: {
                 description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
@@ -1096,9 +953,9 @@ export const tourAdventure = [{
         id: "adcenture-tour-3",
         imageUrl: AdventureDestination4,
         title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza – By Air",
+        subTitle: "5 Days group tour To Skardu ",
         price: "00",
-        duration: "10 Days 9 Nights",
+        duration: "5 Days 4 Nights",
         details: {
             overview: {
                 description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
