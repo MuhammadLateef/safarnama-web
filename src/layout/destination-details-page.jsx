@@ -26,7 +26,7 @@ import Shigar from "../assets/shigar/shigar-fort.jpg";
 import Shigar2 from "../assets/shigar/askole-village.jpg";
 import Shigar5 from "../assets/shigar/Baltoro-Glacier.jpg";
 import kharmang from "../assets/kharmang/Manthokha-waterfall.jpg";
-import kharmang2 from "../assets/kharmang/ghanduslake.jpg";
+import kharmang2 from "../assets/kharmang/ghanduslake.JPG";
 import kharmang3 from "../assets/kharmang/Khamosh-Waterfall.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
 import Diamer2 from "../assets/diamer/fairy-meadows2.jpg";
