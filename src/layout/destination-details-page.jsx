@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Hunza from "../assets/hunza/altitfort.jpg";
-import Hunza2 from "../assets/hunza/passuglacier.jpg";
+import Hunza2 from "../assets/hunza/passuglacier.JPG";
 import Hunza3 from "../assets/hunza/hunzaboritelake.jpg";
 import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
