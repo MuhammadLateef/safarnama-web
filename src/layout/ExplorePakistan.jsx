@@ -10,7 +10,7 @@ import Ghanche from "../assets/ghanche/khaplu-fort.jpg";
 import Kharmang from "../assets/kharmang/kharmang-district.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
 import Diamer from "../assets/diamer/fairy-meadows.webp";
-import Roundu from "../assets/roundu/bilamik-valley1.jpg";
+import Roundu from "../assets/roundu/bilamik-valley1.JPG";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 
 const destinations = [
