@@ -13,7 +13,7 @@ import BilamikValley3 from "./assets/roundu/bilamik-valley3.JPG";
 import BilamikValley4 from "./assets/roundu/bilamik-valley4.png";
 import BilamikValley5 from "./assets/roundu/bilamik-valley5.JPG";
 import BilamikValley6 from "./assets/roundu/bilamik-valley6.JPG";
-import BilamikValley7 from "./assets/roundu/bilamik-valley7.JPG";s
+import BilamikValley7 from "./assets/roundu/bilamik-valley7.JPG";
 import mainImage1 from "./assets/main-image1.png"
 import mainImage2 from "./assets/main-image2.png"
 import mainImage3 from "./assets/main-image3.png"
