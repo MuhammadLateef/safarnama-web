@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://safarnamatour.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/about</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/tours</loc>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/hotels</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/explore-gilgit-baltistan</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/transport</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/photography-service</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://safarnamatour.com/contact</loc>
+    <priority>0.90</priority>
+  </url>
+
+</urlset>

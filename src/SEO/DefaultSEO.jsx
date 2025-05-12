@@ -1,78 +1,50 @@
-<!doctype html>
-<html lang="en">
+import { Helmet } from "react-helmet-async";
 
-<head>
-    <!-- Required meta tags -->
+export default function DefaultSEO() {
+  return (
+    <Helmet>
+       {/* Required meta tags  */}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
-    <!-- Primary Meta Tags -->
+    {/* <!-- Primary Meta Tags --> */}
     <title>Tour </title>
     <meta name="description" content="Discover amazing tours and travel experiences with [Your Company Name]. Book your dream vacation today!" />
     <meta name="keywords" content="travel, tours, vacation, holiday, adventure, booking" />
     <meta name="author" content="Safarnama Travels" />
     <meta name="robots" content="index, follow" />
     
-    <!-- Favicon & App Icons -->
+    {/* <!-- Favicon & App Icons --> */}
     <link rel="icon" type="image/png" href="/logoo.png" />
     
-    <!-- Fonts -->
+    {/* <!-- Fonts --> */}
     <link rel="stylesheet" href="/fonts/dosis.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     
-    <!-- Open Graph / Social Media Meta Tags -->
+    {/* <!-- Open Graph / Social Media Meta Tags --> */}
     <meta property="og:title" content="Tour - Your Catchy Tagline Here" />
     <meta property="og:description" content="Discover amazing tours and travel experiences with [Your Company Name]. Book your dream vacation today!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://safarnamatour.com" />
-    <meta property="og:image" content="https://www.safarnamatour.com/destinations" />
+    <meta property="og:image" content="https://safarnamatour.com/social-preview.jpg" />
     <meta property="og:site_name" content="Safarnama Travels" />
     
-    <!-- Twitter Card Meta Tags -->
+    {/* <!-- Twitter Card Meta Tags --> */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tour - Your Catchy Tagline Here" />
     <meta name="twitter:description" content="Discover amazing tours and travel experiences with [Your Company Name]. Book your dream vacation today!" />
-    <meta name="twitter:image" content="https://safarnamatour.com/" />
+    <meta name="twitter:image" content="https://safarnamatour.com/social-preview.jpg" />
     
-    <!-- Canonical URL -->
+    {/* <!-- Canonical URL --> */}
     <link rel="canonical" href="https://safarnamatour.com" />
     
-    <!-- Preload critical resources -->
+    {/* <!-- Preload critical resources --> */}
     <link rel="preload" href="/src/main.jsx" as="script" />
     
-    <!-- Theme Color for Mobile Browsers -->
+    {/* <!-- Theme Color for Mobile Browsers --> */}
     <meta name="theme-color" content="#ffffff" />
-</head>
-
-<body>
-    <div id="root"></div>
-
-    <script type="module" src="/src/main.jsx"></script>
-    
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "safarnama",
-      "url": "https:safarnamatour.com",
-      "logo": "https://yourwebsite.com/logoo.png",
-      "description": "Discover amazing tours and travel experiences",
-      "address": {
-        "@type": "SAFARNAMA TOURS SMC PVT LTD, safarnama tours, airport road skardu, airport Rd, Skardu, Gilgit Baltistan",
-        "addressLocality": "Gilgit Baltistan",
-        "postalCode": "39350",
-        "addressCountry": "pakistan"
-      },
-      "contactPoint": {
-        "@type": "phone number",
-        "telephone": "+92 3554713444",
-        "contactType": "customer service"
-      }
-    }
-    </script>
-</body>
-
-</html>
+    </Helmet>
+  );
+}
