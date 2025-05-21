@@ -67,7 +67,7 @@ export default function Hero() {
         <img
           src={images[imgIndex]}
           alt="Hero"
-          className="w-full h-[560px] md:h-[500px] lg:h-[600px] object-fill transition-opacity duration-700"
+          className="w-full h-[560px] md:h-[500px] lg:h-[700px] object-fill transition-opacity duration-700"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md"></div>
       </div>

@@ -8,7 +8,6 @@ import HotelDetailPage from "./layout/HotelDetailPage";
 import CustomTour from "./layout/Customtour";
 import Home from "./layout/home";
 import Form from "./components/form";
-import Photography from "./layout/Photography";
 import Transportation from "./layout/Transport";
 import ContactForm from "./layout/Contactform";
 import Skardu_details from "./pages/Skardu/Skardu_details"
@@ -34,7 +33,6 @@ const AppRoutes = () => {
         <Route path="/form" element={<Form />} />
         <Route path="/hotels" element={<HotelsPage />} />
         <Route path="/hotels/:name" element={<HotelDetailPage />} />
-        <Route path="/photography" element={<Photography/>} />
         <Route path="/transportation" element={<Transportation/>} />
         <Route path="/ride-page" element={<RidePage />} />
         <Route path="/contact" element={<ContactForm />} />

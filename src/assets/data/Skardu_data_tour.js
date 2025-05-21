@@ -10,20 +10,18 @@ import image9 from "../../assets/top_destinations/IMG_4677.JPG"
 import image10 from "../../assets/top_destinations/IMG_4678.JPG"
 import image11 from "../../assets/top_destinations/IMG_4679.JPG"
 import image12 from "../../assets/top_destinations/IMG_4680.JPG"
-import image13 from "../../assets/honey-moon1.jpg";
-import Destination1 from "../../assets/hard-rock.jpg";
+import image13 from "../../assets/honey-moon1.jpeg";
+import Destination1 from "../../assets/hard-rock.jpeg";
 import Destination2 from "../../assets/Honey-Sakrdu.jpeg";
-import Destination3 from "../../assets/Byair.jpg";
-import Destination4 from "../../assets/Hunzabyair.jpg";
+import Destination4 from "../../assets/Hunzabyair.jpeg";
 
 import familyDestination1 from "../../assets/Byroadhunza.jpeg";
-import familyDestination2 from "../../assets/byroad2.jpg";
-import familyDestination3 from "../../assets/byroad3.jpg";
+import familyDestination2 from "../../assets/byroad2.jpeg";
+import familyDestination3 from "../../assets/byroad3.jpeg";
 
-import AdventureDestination1 from "../../assets/skg.jpg";
-import AdventureDestination2 from "../../assets/minimarg.jpg";
+import AdventureDestination1 from "../../assets/skg.jpeg";
+import AdventureDestination2 from "../../assets/skg3.jpeg";
 import AdventureDestination4 from "../../assets/skg2.jpeg";
-import AdventureDestination3 from "../../assets/skhnz.jpg";
 export const tourPackages = [{
         id: "1",
         title: "7-Day Tour Package – Skardu Valley",
@@ -520,101 +518,6 @@ export const companyInfo = {
 }
 
 export const tourHanimoon = [{
-        id: "hunza-valley-1",
-        imageUrl: image13,
-        title: "Hunza",
-        subTitle: "4 Days Honeymoon to Hunza",
-        price: "00",
-        duration: "4 Days 5 Nights",
-        details: {
-            overview: {
-                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
-            },
-            itinerary: [{
-                    day: 1,
-                    title: "Islamabad to Chilas",
-                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
-                },
-                {
-                    day: 2,
-                    title: "Chilas to Skardu",
-                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
-                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
-                },
-                // Add more days as needed
-            ],
-            inclusions: [
-                { text: "Hotel Accommodation", type: "major" },
-                { text: "Transportation in comfortable vehicles", type: "major" },
-                { text: "Breakfast and Dinner", type: "major" },
-                { text: "English Speaking Guide", type: "major" },
-                { text: "All Taxes and Service Charges", type: "major" },
-            ],
-            exclusions: [
-                { text: "Lunch" },
-                { text: "Personal Expenses" },
-                { text: "Optional Activities" },
-                { text: "Travel Insurance" },
-            ],
-            gallery: [image2, image3, image4, image5, image6, image7],
-            companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
-                address: "safarnama tours, airport road skardu",
-                street: "airport Rd, Skardu",
-                location: "Gilgit Baltistan",
-            },
-            phone: "9203554713444",
-        },
-
-    },
-    {
-        id: "hunza-valley-2",
-        imageUrl: Destination1,
-        title: "Hunza + Skardu",
-        subTitle: "10 Days Honeymoon To Skardu and Hunza",
-        price: "00",
-        duration: "10 Days 9 Nights",
-        details: {
-            overview: {
-                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
-            },
-            itinerary: [{
-                    day: 1,
-                    title: "Islamabad to Chilas",
-                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
-                },
-                {
-                    day: 2,
-                    title: "Chilas to Skardu",
-                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
-                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
-                },
-                // Add more days as needed
-            ],
-            inclusions: [
-                { text: "Hotel Accommodation", type: "major" },
-                { text: "Transportation in comfortable vehicles", type: "major" },
-                { text: "Breakfast and Dinner", type: "major" },
-                { text: "English Speaking Guide", type: "major" },
-                { text: "All Taxes and Service Charges", type: "major" },
-            ],
-            exclusions: [
-                { text: "Lunch" },
-                { text: "Personal Expenses" },
-                { text: "Optional Activities" },
-                { text: "Travel Insurance" },
-            ],
-            gallery: [image2, image3, image4, image5, image6, image7],
-            companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
-                address: "safarnama tours, airport road skardu",
-                street: "airport Rd, Skardu",
-                location: "Gilgit Baltistan",
-            },
-            phone: "9203554713444",
-        },
-    },
-    {
         id: "hunza-valley-3",
         imageUrl: Destination2,
         title: "Hunza + Skardu",
@@ -708,6 +611,102 @@ export const tourHanimoon = [{
             phone: "9203554713444",
         },
     },
+    {
+        id: "hunza-valley-1",
+        imageUrl: image13,
+        title: "Khamosh Waterfal",
+        subTitle: "4 Days Honeymoon to Skardu",
+        price: "00",
+        duration: "4 Days 5 Nights",
+        details: {
+            overview: {
+                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
+            },
+            itinerary: [{
+                    day: 1,
+                    title: "Islamabad to Chilas",
+                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
+                },
+                {
+                    day: 2,
+                    title: "Chilas to Skardu",
+                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
+                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
+                },
+                // Add more days as needed
+            ],
+            inclusions: [
+                { text: "Hotel Accommodation", type: "major" },
+                { text: "Transportation in comfortable vehicles", type: "major" },
+                { text: "Breakfast and Dinner", type: "major" },
+                { text: "English Speaking Guide", type: "major" },
+                { text: "All Taxes and Service Charges", type: "major" },
+            ],
+            exclusions: [
+                { text: "Lunch" },
+                { text: "Personal Expenses" },
+                { text: "Optional Activities" },
+                { text: "Travel Insurance" },
+            ],
+            gallery: [image2, image3, image4, image5, image6, image7],
+            companyInfo: {
+                name: "SAFARNAMA TOURS SMC PVT LTD",
+                address: "safarnama tours, airport road skardu",
+                street: "airport Rd, Skardu",
+                location: "Gilgit Baltistan",
+            },
+            phone: "9203554713444",
+        },
+
+    },
+    {
+        id: "hunza-valley-2",
+        imageUrl: Destination1,
+        title: "Hunza + Skardu",
+        subTitle: "10 Days Honeymoon To Skardu and Hunza",
+        price: "00",
+        duration: "10 Days 9 Nights",
+        details: {
+            overview: {
+                description: "A 7-day tour to Skardu by road, experiencing the beautiful landscapes and cultural heritage of the region. This tour includes comfortable transportation, quality accommodations, and guided tours to the most scenic locations.",
+            },
+            itinerary: [{
+                    day: 1,
+                    title: "Islamabad to Chilas",
+                    description: "Early morning departure from Islamabad. Travel along the Karakoram Highway. Night stay in Chilas.",
+                },
+                {
+                    day: 2,
+                    title: "Chilas to Skardu",
+                    description: "Journey from Chilas to Skardu via the scenic Karakoram Highway. Night stay in Skardu.",
+                    highlights: ["Karakoram Highway", "Indus River", "Mountain Views", "Skardu City"],
+                },
+                // Add more days as needed
+            ],
+            inclusions: [
+                { text: "Hotel Accommodation", type: "major" },
+                { text: "Transportation in comfortable vehicles", type: "major" },
+                { text: "Breakfast and Dinner", type: "major" },
+                { text: "English Speaking Guide", type: "major" },
+                { text: "All Taxes and Service Charges", type: "major" },
+            ],
+            exclusions: [
+                { text: "Lunch" },
+                { text: "Personal Expenses" },
+                { text: "Optional Activities" },
+                { text: "Travel Insurance" },
+            ],
+            gallery: [image2, image3, image4, image5, image6, image7],
+            companyInfo: {
+                name: "SAFARNAMA TOURS SMC PVT LTD",
+                address: "safarnama tours, airport road skardu",
+                street: "airport Rd, Skardu",
+                location: "Gilgit Baltistan",
+            },
+            phone: "9203554713444",
+        },
+    },
+
 ];
 
 

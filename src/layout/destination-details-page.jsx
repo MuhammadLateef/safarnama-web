@@ -5,21 +5,14 @@ import Hunza2 from "../assets/hunza/passuglacier.JPG";
 import Hunza3 from "../assets/hunza/hunzaboritelake.JPG";
 import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
-import Nagar2 from "../assets/nagar/rushLake1.jpg";
+import Nagar2 from "../assets/nagar/rushLake2.jpg"
 import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
 import Gilgit5 from "../assets/gilgit/kargah-buddha.webp";
-import Astore from "../assets/astore/rama-lake.jpg";
+import Astore from "../assets/astore/rama-lake3.jpg";
 import Astore2 from "../assets/astore/astore-river.jpg";
-import Ghanche from "../assets/ghanche/chaqchan-mosque.jpg";
-import Ghanche2 from "../assets/ghanche/hushe-valley.jpg";
-import Ghanche3 from "../assets/ghanche/khaplu-fort.jpg";
-import Ghanche4 from "../assets/ghanche/machulu-valley.jpg";
-import Ghanche5 from "../assets/ghanche/khaplu6.png";
 import Ghanche6 from "../assets/ghanche/khaplu7.png";
 import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
 import khaplu2 from "../assets/ghanche/khaplu2.jpeg";
-import khaplu3 from "../assets/ghanche/khaplu3.jpeg";
-import khaplu4 from "../assets/ghanche/khaplu4.jpeg";
 import Ghizer4 from "../assets/ghizer/phander-valley.jpg";
 import Ghizer5 from "../assets/ghizer/phander-lake.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
@@ -169,7 +162,7 @@ export const destinationData = {
     ghanche: {
         title: "Ghanche District",
         mainImage: Ghanche6, // Using placeholder image, replace with actual Ghanche image
-        images: [Ghanche6, khaplu1, khaplu2, khaplu3, khaplu4, Ghanche, Ghanche2, Ghanche3, Ghanche4, Ghanche5], // Add actual images when available
+        images: [Ghanche6, khaplu1, khaplu2], // Add actual images when available
         history: `Ghanche is the easternmost district of Gilgit-Baltistan, Pakistan, bordering India.
              It was established as a district in 1977 and includes the historic Baltistan region.
              The name "Ghanche" comes from the Balti language, meaning "glacier," reflecting the 

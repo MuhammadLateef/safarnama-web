@@ -1,48 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Destination1 from "../assets/skg.jpg";
-import Destination2 from "../assets/minimarg.jpg";
-import Destination4 from "../assets/skg2.jpeg";
-import Destination3 from "../assets/skhnz.jpg";
-import info1 from "../assets/car(2).png";
-import info2 from "../assets/hotel.png";
-import info3 from "../assets/dish.png";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { tourAdventure } from "../assets/data/Skardu_data_tour";
 const Grouptour = () => {
-  const data = [
-    {
-      image: Destination1,
-      title: "Sakrdu",
-      subTitle: "Six Days Trip To Skardu – Group Tour",
-      cost: "00",
-      duration: "6 Days",
-    },
-    {
-      image: Destination2,
-      title: "Minimarg",
-      subTitle: "Six Days Trip To Minimarg – Group Tour",
-      cost: "00",
-      duration: "6 Days",
-    },
-    {
-      image: Destination4,
-      title: "Skardu",
-      subTitle: "Seven Days Trip To Skardu – Group Tour",
-      cost: "00",
-      duration: "7 Days",
-    },
-    {
-      image: Destination3,
-      title: "Skardu + Hunza",
-      subTitle: "Eight Days Trip To Skardu and Hunza – Group Tour",
-      cost: "00",
-      duration: "8 Days",
-    },
-  ];
+ 
 
   return (
     <div>
@@ -78,7 +43,7 @@ const HoverCard = ({ destination }) => {
 
   return (
     <div
-      className="relative h-80 rounded-sm overflow-hidden shadow-ld group"
+      className="relative h-96 rounded-sm overflow-hidden shadow-ld group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
