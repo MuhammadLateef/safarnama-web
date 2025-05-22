@@ -14,12 +14,12 @@ import Roundu from "../assets/roundu/bilamik-valley1.JPG";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 import SEOHelmet from "../SEO/SEOHelmet";
 
-const destinations = [
+export const destinations = [
   { image: Hunza, title: "Hunza Valley", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
-  { image: Nagar, title: "Rakaposhi Nagar", slug: "nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture." },
-  { image: Gilgit, title: "Gilgit City", slug: "gilgit", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities." },
-  { image: Astore, title: "Astore Valley", slug: "astore", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park." },
-  { image: Skardu, title: "Skardu City", slug: "skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2." },
+  { image: Nagar, title: "Rakaposhi Base Camp", slug: "nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture." },
+  { title: "Haramosh Valley", description: "Haramosh valley located in Gilgit, offering a blend of natural beauty and urban amenities.", image: Gilgit, slug: "gilgit" },
+  { title: "Minimarg Valley", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park.", image: Astore, slug: "astore" },
+  { image: Skardu, title: "Skardu Valley", slug: "skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2." },
   { image: Deosai, title: "Deosai National Park", slug: "deosai-national-park", description: "One of the world's highest plateaus, known as 'The Land of Giants' with unique flora and fauna." },
   { image: Ghanche, title: "Khaplu Valley", slug: "ghanche", description: "The easternmost district of Pakistan, known for Khaplu Palace and major peaks like K7." },
   { image: Ghizer, title: "Phander Valley", slug: "ghizer", description: "Known for Phander Lake, Shandur Pass, trout fishing, and diverse cultures." },

@@ -13,21 +13,15 @@ import mainImage5 from "./assets/main-image5.png"
 import mainImage6 from "./assets/main-image6.png"
 
 export {
-    BashoImage1,
-    BashoImage2,
     BashoImage3,
     BashoImage4,
     BashoImage5,
     BashoImage6,
-    BashoImage7,
-    BashoImage8,
+
     BilamikValley1,
     BilamikValley2,
-    BilamikValley3,
     BilamikValley4,
-    BilamikValley5,
-    BilamikValley6,
-    BilamikValley7,
+
     mainImage1,
     mainImage2,
     mainImage3,

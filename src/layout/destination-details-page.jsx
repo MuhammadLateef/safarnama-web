@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Hunza from "../assets/hunza/altitfort.jpg";
-import Hunza2 from "../assets/hunza/passuglacier.JPG";                                                                                                                                                                                
+import Hunza2 from "../assets/hunza/passuglacier.JPG";
 import Hunza3 from "../assets/hunza/hunzaboritelake.JPG";
 import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
@@ -31,11 +31,7 @@ import Deosai3 from "../assets/deosai/deosai3.png";
 import {
     BashoImage3, BashoImage4, BashoImage5, BilamikValley1,
     BilamikValley2,
-    BilamikValley3,
-    BilamikValley4,
-    BilamikValley5,
-    BilamikValley6,
-    BilamikValley7,
+
 } from "../Index"
 // You would typically fetch this data from an API
 export const destinationData = {
@@ -72,7 +68,7 @@ export const destinationData = {
              made from buckwheat.`
     },
     nagar: {
-        title: "Nagar Valley",
+        title: "Rakaposhi Base Camp",
         mainImage: Nagar,
         images: [Nagar1, Nagar2],
         history: `Nagar Valley, located in Gilgit-Baltistan, was formerly a princely state that existed until 1974.
@@ -90,10 +86,10 @@ export const destinationData = {
     },
     // Add similar detailed information for other destinations
     gilgit: {
-        title: "Gilgit City",
+        title: "Haramosh valley",
         mainImage: Gilgit,
         images: [Gilgit, Gilgit5],
-        history: `Gilgit is the capital city of Gilgit-Baltistan region and has served as an important trade center
+        history: `Haramosh valley located at Gilgit which is capital city of Gilgit-Baltistan region and has served as an important trade center
              along the ancient Silk Road. The city has a strategic location at the confluence of the Gilgit
              and Hunza rivers, making it historically significant for trade and cultural exchange.`,
         attractions: [
@@ -125,10 +121,10 @@ export const destinationData = {
              The culture bears strong influences from Tibet, with unique architecture, cuisine, and traditional sports.`
     },
     astore: {
-        title: "Astore Valley",
+        title: "Minimarg valley",
         mainImage: Astore,
         images: [Astore2],
-        history: `Astore Valley is located in Gilgit-Baltistan and was historically part of the state of Kashmir.
+        history: `Minimarg Astore Valley is located in Gilgit-Baltistan and was historically part of the state of Kashmir.
              It served as an important route connecting Kashmir and Gilgit. The valley has witnessed various
              cultural influences throughout its history.`,
         attractions: [
@@ -325,14 +321,14 @@ const DestinationDetail = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <div className="relative h-[50vh] md:h-[70vh]">
+            <div className="relative h-[400px] w-full overflow-hidden">
                 <img
                     src={destination.mainImage}
                     alt={destination.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover mx-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
-                    <div className="container mx-auto max-w-[90%] pb-12">
+                    <div className="container mx-auto max-w-[90%] pb-6">
                         <h1 className="text-4xl md:text-5xl font-bold text-white">{destination.title}</h1>
                     </div>
                 </div>

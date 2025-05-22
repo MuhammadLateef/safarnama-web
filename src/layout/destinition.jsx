@@ -4,21 +4,10 @@ import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 import Hunza from "../assets/hunza/altitfort.jpg";
-import Skardu from "../assets/top_destinations/IMG_4651.JPG";
-import Nagar from "../assets/nagar/hoparglacier1.jpg";
-import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
-import Astore from "../assets/astore/rama-lake3.jpg";
-import Deosai from "../assets/top_destinations/IMG_4665.JPG";
-
+import { destinations } from './ExplorePakistan';
 const Destination = () => {
-  const destinations = [
-    { title: "Hunza Valley", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts.", image: Hunza, slug: "hunza" },
-    { title: "Rakaposhi Nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture.", image: Nagar, slug: "nagar" },
-    { title: "Gilgit City", description: "The capital city of Gilgit-Baltistan, offering a blend of natural beauty and urban amenities.", image: Gilgit, slug: "gilgit" },
-    { title: "Astore Valley", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park.", image: Astore, slug: "astore" },
-    { title: "Skardu valley", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2.", image: Skardu, slug: "skardu" },
-    { title: "Deosai National Park", description: "One of the world's highest plateaus, known as 'The Land of Giants' with unique flora and fauna.", image: Deosai, slug: "deosai-national-park" }
-  ];
+// Only show the first 3 tours on the home page
+  const destinations2 = destinations.slice(0, 6);
 
   return (
     <>
@@ -43,7 +32,7 @@ const Destination = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {destinations.map((destination) => (
+            {destinations2.map((destination) => (
               <div
                 key={destination.slug}
                 className="group relative bg-white border rounded-sm overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
