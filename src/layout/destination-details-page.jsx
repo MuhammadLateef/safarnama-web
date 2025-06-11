@@ -7,7 +7,7 @@ import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
 import Nagar2 from "../assets/nagar/rushLake2.jpg"
 import Gilgit from "../assets/gilgit/Tormik_valley.jpeg";
-import Gilgit5 from "../assets/gilgit/tormik2.JPEG";
+import TormikImage from "../assets/gilgit/tormik2.jpeg";
 import Astore from "../assets/astore/minimarg.jpeg";
 import Ghanche6 from "../assets/ghanche/khaplu7.png";
 import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
@@ -87,7 +87,7 @@ export const destinationData = {
     gilgit: {
         title: "Tormik valley",
         mainImage: Gilgit,
-        images: [Gilgit, Gilgit5],
+        images: [Gilgit, TormikImage],
         history: `Tormik Valley is around a 3.5-hour drive from Jaglot-Skardu Road (JSR). From there, a scenic lake located deep in the valley requires a 3-hour hike to reach. It’s an ideal destination for nature lovers and trekking enthusiasts. Tormik is a panoramic valley located in the Subdivision Roundu of Skardu District. It lies along the Gilgit-Skardu link road, near the Subdivision Roundu headquarters, Dambudas. `,
         attractions: [
             "Stak Valley Skardu",
