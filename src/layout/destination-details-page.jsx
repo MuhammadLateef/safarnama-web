@@ -7,7 +7,7 @@ import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
 import Nagar2 from "../assets/nagar/rushLake2.jpg"
 import Gilgit from "../assets/gilgit/Tormik_valley.jpeg";
-import Gilgit5 from "../assets/gilgit/Tormik2.jpeg";
+import Gilgit5 from "../assets/gilgit/tormik2.JPEG";
 import Astore from "../assets/astore/minimarg.jpeg";
 import Ghanche6 from "../assets/ghanche/khaplu7.png";
 import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
