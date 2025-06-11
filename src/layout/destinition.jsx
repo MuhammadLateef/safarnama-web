@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
-import Hunza from "../assets/hunza/altitfort.jpg";
+import Hunza from "../assets/hunza/altitfort.jpeg";
 import { destinations } from './ExplorePakistan';
 const Destination = () => {
 // Only show the first 3 tours on the home page

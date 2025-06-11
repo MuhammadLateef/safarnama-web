@@ -116,10 +116,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import icon1 from "../assets/Hunzabanner.jpg";
-import icon2 from "../assets/skarduicon.png";
-import icon3 from "../assets/Swaticon.png";
-import icon4 from "../assets/Gilgiticon.jpg";
-import icon5 from "../assets/Naranicon.png";
 import cardImage1 from "../assets/Hunzahotel1.jpg";
 import cardImage2 from "../assets/Hunzahotel2.webp";
 import cardImage3 from "../assets/Hunzahotel3.webp";
@@ -274,7 +270,7 @@ const HotelDetailPage = () => {
 
           {/* Price */}
           <div className="mt-4">
-            <span className="text-2xl font-bold text-gray-900">$58.00</span>
+            <span className="text-2xl font-bold text-gray-900">$16.00</span>
           </div>
 
           {/* Book Now Button */}

@@ -47,7 +47,7 @@ export default function Hero() {
       `*Check out :* ${checkout}%0a`;
 
     // Replace with your WhatsApp number
-    const whatsappUrl = `https://wa.me/923401557615?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/923554713444?text=${whatsappMessage}`;
 
     // Open WhatsApp in new tab
     window.open(whatsappUrl, '_blank').focus();

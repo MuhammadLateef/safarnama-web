@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Hunza from "../assets/hunza/altitfort.jpg";
+import Hunza from "../assets/hunza/altitfort.jpeg";
 import Hunza2 from "../assets/hunza/passuglacier.JPG";
 import Hunza3 from "../assets/hunza/hunzaboritelake.JPG";
 import Nagar from "../assets/nagar/rakaposhi1.jpg";
 import Nagar1 from "../assets/nagar/hoparglacier1.jpg";
 import Nagar2 from "../assets/nagar/rushLake2.jpg"
-import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
-import Gilgit5 from "../assets/gilgit/kargah-buddha.webp";
-import Astore from "../assets/astore/rama-lake3.jpg";
-import Astore2 from "../assets/astore/astore-river.jpg";
+import Gilgit from "../assets/gilgit/Tormik_valley.jpeg";
+import Gilgit5 from "../assets/gilgit/Tormik2.jpeg";
+import Astore from "../assets/astore/minimarg.jpeg";
 import Ghanche6 from "../assets/ghanche/khaplu7.png";
 import khaplu1 from "../assets/ghanche/khaplu1.jpeg";
 import khaplu2 from "../assets/ghanche/khaplu2.jpeg";
@@ -21,8 +20,8 @@ import Shigar5 from "../assets/shigar/Baltoro-Glacier.jpg";
 import kharmang from "../assets/kharmang/Manthokha-waterfall.jpg";
 import kharmang2 from "../assets/kharmang/ghanduslake.JPG";
 import kharmang3 from "../assets/kharmang/Khamosh-Waterfall.jpg";
-import Diamer from "../assets/diamer/fairy-meadows.webp";
-import Diamer2 from "../assets/diamer/fairy-meadows2.jpg";
+import Diamer from "../assets/diamer/fairy-meadows1.jpeg";
+import Diamer2 from "../assets/diamer/fairy-meadows2.jpeg";
 import Roundu from "../assets/roundu/tormik-valley.png"
 import Deosai1 from "../assets/deosai/deosai1.png";
 import Deosai2 from "../assets/deosai/deosai2.png";
@@ -86,28 +85,21 @@ export const destinationData = {
     },
     // Add similar detailed information for other destinations
     gilgit: {
-        title: "Haramosh valley",
+        title: "Tormik valley",
         mainImage: Gilgit,
         images: [Gilgit, Gilgit5],
-        history: `Haramosh valley located at Gilgit which is capital city of Gilgit-Baltistan region and has served as an important trade center
-             along the ancient Silk Road. The city has a strategic location at the confluence of the Gilgit
-             and Hunza rivers, making it historically significant for trade and cultural exchange.`,
+        history: `Tormik Valley is around a 3.5-hour drive from Jaglot-Skardu Road (JSR). From there, a scenic lake located deep in the valley requires a 3-hour hike to reach. It’s an ideal destination for nature lovers and trekking enthusiasts. Tormik is a panoramic valley located in the Subdivision Roundu of Skardu District. It lies along the Gilgit-Skardu link road, near the Subdivision Roundu headquarters, Dambudas. `,
         attractions: [
-            "Kargah Buddha - A figure carved into a cliff face dating back to the 7th century",
-            "Gilgit Bazaar - A vibrant market offering local handicrafts and products",
-            "Jutial Mosque - An important religious site with beautiful architecture",
-            "Gilgit River - Offering opportunities for fishing and river rafting",
-            "Bagrote Valley - A hidden paradise — Bagrote Valley Gilgit",
-            "Haramosh Valley - A breathtaking, untouched valley — Haramosh Valley"
+            "Stak Valley Skardu",
+            "Roundu Valley Skardu - Gilgit Baltistan",
+            "Bilamik Valley - The Best Tourist Destination in Skardu",
         ],
-        culture: `Gilgit serves as a melting pot of various ethnic groups including Shina, Burushaski, and Wakhi
-             speakers. The city celebrates a mix of traditions from different communities and is known for its
-             cultural diversity.`
+        culture: `The valley is famous for its lush green and breathtaking high-altitude area known as “Broq” in the local Balti language. Broq features beautiful green meadows, freshwater streams, springs, and forests filled with various types of plants.`
     },
     skardu: {
         title: "Skardu Valley",
-        mainImage: BashoImage5,
-        images: [BashoImage3, BashoImage4, BashoImage5],
+        mainImage: BashoImage3,
+        images: [BashoImage4, BashoImage5],
         history: `Skardu is the capital of Baltistan division and was part of the ancient kingdom of Little Tibet.
              The valley has been an important center for Tibetan Buddhism and later Islamic culture. It served
              as a gateway to the high mountains of the Karakoram range.`,
@@ -123,7 +115,7 @@ export const destinationData = {
     astore: {
         title: "Minimarg valley",
         mainImage: Astore,
-        images: [Astore2],
+        images: [Astore],
         history: `Minimarg Astore Valley is located in Gilgit-Baltistan and was historically part of the state of Kashmir.
              It served as an important route connecting Kashmir and Gilgit. The valley has witnessed various
              cultural influences throughout its history.`,
@@ -321,7 +313,7 @@ const DestinationDetail = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <div className="relative h-[400px] w-full overflow-hidden">
+            <div className="relative h-[550px] w-full overflow-hidden">
                 <img
                     src={destination.mainImage}
                     alt={destination.title}

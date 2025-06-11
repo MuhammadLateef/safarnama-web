@@ -1,4 +1,4 @@
-import BashoImage3 from "./assets/skardu/basho-meadows-camping3.JPG";
+import BashoImage3 from "./assets/skardu/basho-meadows-camping3.jpeg";
 import BashoImage4 from "./assets/skardu/basho-meadows-camping4.JPG";
 import BashoImage5 from "./assets/skardu/basho-meadows-camping5.JPG";
 import BashoImage6 from "./assets/skardu/basho-meadows-camping6.JPG";

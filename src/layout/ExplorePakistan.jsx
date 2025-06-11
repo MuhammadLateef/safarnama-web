@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/main-image1.png";
-import Hunza from "../assets/hunza/altitfort.jpg";
+import Hunza from "../assets/hunza/altitfort.jpeg";
 import Nagar from "../assets/nagar/hoparglacier1.jpg";
-import Skardu from "../assets/top_destinations/skardu.JPG";
-import Gilgit from "../assets/gilgit/gilgit-river1.jpg";
-import Astore from "../assets/astore/rama-lake3.jpg";
+import Skardu from "../assets/skardu/basho-meadows-camping3.jpeg";
+import Tormik from "../assets/gilgit/Tormik_valley.jpeg";
+import Astore from "../assets/astore/minimarg.jpeg";
 import Ghizer from "../assets/ghizer/phander-valley.jpg";
 import Ghanche from "../assets/ghanche/khaplu7.png";
 import Kharmang from "../assets/kharmang/kharmang-district.jpg";
 import Shigar from "../assets/shigar/shigar-fort.jpg";
-import Diamer from "../assets/diamer/fairy-meadows.webp";
+import Diamer from "../assets/diamer/fairy-meadows1.jpeg";
 import Roundu from "../assets/roundu/bilamik-valley1.JPG";
 import Deosai from "../assets/top_destinations/IMG_4665.JPG";
 import SEOHelmet from "../SEO/SEOHelmet";
@@ -17,7 +17,7 @@ import SEOHelmet from "../SEO/SEOHelmet";
 export const destinations = [
   { image: Hunza, title: "Hunza Valley", slug: "hunza", description: "A mountainous valley known for its scenic beauty, apricot farms, and historic forts." },
   { image: Nagar, title: "Rakaposhi Base Camp", slug: "nagar", description: "Home to some of the world's highest peaks and traditional villages with rich culture." },
-  { title: "Haramosh Valley", description: "Haramosh valley located in Gilgit, offering a blend of natural beauty and urban amenities.", image: Gilgit, slug: "gilgit" },
+  { title: "Tormik Valley", description: "The valley lies on the Gilgit-Skardu link road near the headquarters of Subdivision Roundu, Dambudas. ", image: Tormik, slug: "gilgit" },
   { title: "Minimarg Valley", description: "Known for its lush meadows, dense forests, and the gateway to Deosai National Park.", image: Astore, slug: "astore" },
   { image: Skardu, title: "Skardu Valley", slug: "skardu", description: "Famous for its desert, lakes, and proximity to the world's second-highest mountain, K2." },
   { image: Deosai, title: "Deosai National Park", slug: "deosai-national-park", description: "One of the world's highest plateaus, known as 'The Land of Giants' with unique flora and fauna." },

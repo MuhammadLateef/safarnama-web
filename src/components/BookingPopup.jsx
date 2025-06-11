@@ -11,8 +11,7 @@ export default function BookingPopup() {
     phone: "",
     travelers: "2",
     date: "",
-    packageName: "Deluxe Tour Package – Skardu Valley",
-    price: "168000",
+    packageName: "Tour Package – Gilgit Baltistan",
     duration: "5 days",
   });
 
@@ -22,20 +21,7 @@ export default function BookingPopup() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Update price based on number of travelers
-  useEffect(() => {
-    const prices = {
-      "1": "90000",
-      "2": "168000",
-      "3": "200000",
-      "4": "250000",
-      "5+": "300000",
-    };
-    setFormData((prev) => ({
-      ...prev,
-      price: prices[prev.travelers] || "0",
-    }));
-  }, [formData.travelers]);
+ 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,7 +33,6 @@ export default function BookingPopup() {
       `Hello, I found your tour on your website. Please provide all further details.
 
 Package Name: ${formData.packageName}
-Total Price: Rs. ${formData.price}
 Duration: ${formData.duration}
 Travelers: ${formData.travelers}
 Date: ${formData.date}
@@ -67,7 +52,7 @@ Phone: ${formData.phone}`
           animate={{ opacity: 1, y: 0, x: 0 }}
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="fixed bottom-6 right-6 z-50 w-full max-w-md rounded-lg shadow-lg bg-white border p-5"
+          className="fixed bottom-18 right-4 z-50 w-full max-w-md rounded-lg shadow-lg bg-white border p-5"
         >
           <div className="flex justify-between items-center mb-4">
             <div>
@@ -89,7 +74,6 @@ Phone: ${formData.phone}`
             <div>
               <p className="text-emerald-800 font-medium">{formData.packageName}</p>
               <div className="flex text-sm gap-4 text-emerald-700 mt-1">
-                <span className="flex items-center gap-1"><Users className="w-4 h-4" /> Rs. {formData.price}</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {formData.duration}</span>
               </div>
             </div>

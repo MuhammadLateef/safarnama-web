@@ -13,7 +13,7 @@ export default function ScrollToTop() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []); 
   const openWhatsApp = () => {
-    window.open("https://wa.me/1234567890?text=Hello!%20I%20need%20some%20information", "_blank");
+    window.open("https://wa.me/9203554713444?text=Hello!%20I%20need%20some%20information", "_blank");
   };
 
   return (
