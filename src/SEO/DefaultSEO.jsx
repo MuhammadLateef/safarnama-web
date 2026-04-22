@@ -10,7 +10,7 @@ export default function DefaultSEO() {
     
     {/* <!-- Primary Meta Tags --> */}
     <title>Tour </title>
-    <meta name="description" content="Discover amazing tours and travel experiences with [Your Company Name]. Book your dream vacation today!" />
+    <meta name="description" content="Discover amazing tours and travel experiences with Safarnama tour. Book your dream vacation today!" />
     <meta name="keywords" content="travel, tours, vacation, holiday, adventure, booking" />
     <meta name="author" content="Safarnama Travels" />
     <meta name="robots" content="index, follow" />
@@ -25,7 +25,7 @@ export default function DefaultSEO() {
     
     {/* <!-- Open Graph / Social Media Meta Tags --> */}
     <meta property="og:title" content="Tour - Your Catchy Tagline Here" />
-    <meta property="og:description" content="Discover amazing tours and travel experiences with [Your Company Name]. Book your dream vacation today!" />
+    <meta property="og:description" content="Discover amazing tours and travel experiences with Safarnama tours. Book your dream vacation today!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://safarnamatour.com" />
     <meta property="og:image" content="https://safarnamatour.com/social-preview.jpg" />
@@ -34,7 +34,7 @@ export default function DefaultSEO() {
     {/* <!-- Twitter Card Meta Tags --> */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tour - Your Catchy Tagline Here" />
-    <meta name="twitter:description" content="Discover amazing tours and travel experiences with [Your Company Name]. Book your dream vacation today!" />
+    <meta name="twitter:description" content="Discover amazing tours and travel experiences with Safarnama tours. Book your dream vacation today!" />
     <meta name="twitter:image" content="https://safarnamatour.com/social-preview.jpg" />
     
     {/* <!-- Canonical URL --> */}
