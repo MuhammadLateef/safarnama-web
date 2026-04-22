@@ -140,7 +140,7 @@ export const tourPackages = [{
             ],
             gallery: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS ",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -219,7 +219,7 @@ export const tourPackages = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -298,7 +298,7 @@ export const tourPackages = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -364,7 +364,7 @@ export const tourPackages = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS ",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -431,7 +431,7 @@ export const tourPackages = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS ",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -498,7 +498,7 @@ export const tourPackages = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS ",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -510,7 +510,7 @@ export const tourPackages = [{
 
 // Default company information that can be used across all tours
 export const companyInfo = {
-    name: "SAFARNAMA TOURS SMC PVT LTD",
+    name: "SAFARNAMA TOURS",
     address: "safarnama tours, airport road skardu",
     street: "airport Rd, Skardu",
     location: "Gilgit Baltistan",
@@ -556,7 +556,7 @@ export const tourHanimoon = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -603,7 +603,7 @@ export const tourHanimoon = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -650,7 +650,7 @@ export const tourHanimoon = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -698,7 +698,7 @@ export const tourHanimoon = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -749,7 +749,7 @@ export const tourFamily = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -797,7 +797,7 @@ export const tourFamily = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -844,7 +844,7 @@ export const tourFamily = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -893,7 +893,7 @@ export const tourAdventure = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -940,7 +940,7 @@ export const tourAdventure = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
@@ -987,7 +987,7 @@ export const tourAdventure = [{
             ],
             gallery: [image2, image3, image4, image5, image6, image7],
             companyInfo: {
-                name: "SAFARNAMA TOURS SMC PVT LTD",
+                name: "SAFARNAMA TOURS",
                 address: "safarnama tours, airport road skardu",
                 street: "airport Rd, Skardu",
                 location: "Gilgit Baltistan",
