@@ -62,7 +62,7 @@ export default function ContactPage() {
                 {
                   title: "Head Office",
                   content: [
-                    "SAFARNAMA TOURS SMC PVT LTD",
+                    "SAFARNAMA TOURS",
                     "safarnama tours, airport road skardu",
                     "airport Rd, Skardu",
                     "Gilgit Baltistan, Pakistan"
